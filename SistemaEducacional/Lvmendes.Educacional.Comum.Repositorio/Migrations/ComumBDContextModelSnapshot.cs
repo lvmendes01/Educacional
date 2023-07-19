@@ -36,6 +36,24 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.ToTable("Cursos");
                 });
+
+            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.TurnoEntidade", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("NomeTurno")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Turnos");
+                });
 #pragma warning restore 612, 618
         }
     }

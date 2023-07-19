@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Lvmendes.Educacional.Comum.Util/1.0.0": {
+        "runtime": {
+          "Lvmendes.Educacional.Comum.Util.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lvmendes.Educacional.Comum.Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

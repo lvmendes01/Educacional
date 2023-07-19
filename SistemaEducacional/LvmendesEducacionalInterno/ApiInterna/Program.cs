@@ -18,6 +18,11 @@ builder.Services.AddScoped<ICursoRepositorio, CursoRepositorio>();
 
 
 
+builder.Services.AddScoped<ITurnoServico, TurnoServico>();
+builder.Services.AddScoped<ITurnoRepositorio, TurnoRepositorio>();
+
+
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ComumBDContext>(options => {
