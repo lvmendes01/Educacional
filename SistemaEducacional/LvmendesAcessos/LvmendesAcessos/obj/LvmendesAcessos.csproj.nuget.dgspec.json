@@ -148,6 +148,9 @@
             "projectReferences": {
               "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj": {
                 "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj"
+              },
+              "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj"
               }
             }
           }

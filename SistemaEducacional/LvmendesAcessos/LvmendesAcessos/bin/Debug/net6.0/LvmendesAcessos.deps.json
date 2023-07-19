@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "LvmendesAcessos/1.0.0": {
         "dependencies": {
-          "Lvmendes.Educacional.Comum.Repositorio": "1.0.0",
+          "Lvmendes.Acesso.Repositorio": "1.0.0",
+          "Lvmendes.Acesso.Servico": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -306,20 +308,27 @@
           }
         }
       },
-      "Lvmendes.Educacional.Comum.Entidades/1.0.0": {
+      "Lvmendes.Acesso.Entidades/1.0.0": {
         "runtime": {
-          "Lvmendes.Educacional.Comum.Entidades.dll": {}
+          "Lvmendes.Acesso.Entidades.dll": {}
         }
       },
-      "Lvmendes.Educacional.Comum.Repositorio/1.0.0": {
+      "Lvmendes.Acesso.Repositorio/1.0.0": {
         "dependencies": {
-          "Lvmendes.Educacional.Comum.Entidades": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.9",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "Lvmendes.Acesso.Entidades": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.9"
         },
         "runtime": {
-          "Lvmendes.Educacional.Comum.Repositorio.dll": {}
+          "Lvmendes.Acesso.Repositorio.dll": {}
+        }
+      },
+      "Lvmendes.Acesso.Servico/1.0.0": {
+        "dependencies": {
+          "Lvmendes.Acesso.Entidades": "1.0.0",
+          "Lvmendes.Acesso.Repositorio": "1.0.0"
+        },
+        "runtime": {
+          "Lvmendes.Acesso.Servico.dll": {}
         }
       }
     }
@@ -533,12 +542,17 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "Lvmendes.Educacional.Comum.Entidades/1.0.0": {
+    "Lvmendes.Acesso.Entidades/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Lvmendes.Educacional.Comum.Repositorio/1.0.0": {
+    "Lvmendes.Acesso.Repositorio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lvmendes.Acesso.Servico/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,6 +18,10 @@ builder.Services.AddScoped<IPerfilServico, PerfilServico>();
 builder.Services.AddScoped<IPerfilRepositorio, PerfilRepositorio>();
 
 
+builder.Services.AddScoped<IUsuarioServico, UsuarioServico>();
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+
+
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

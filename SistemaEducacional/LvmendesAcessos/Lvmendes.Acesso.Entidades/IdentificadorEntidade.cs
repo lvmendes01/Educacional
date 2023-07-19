@@ -3,7 +3,7 @@
     public class IdentificadorEntidade
     {
 
-        public Int64 Id { get; set; }
-        public DateTime DataCriacao { get; set; }
+        public virtual Int64 Id { get; set; }
+        public virtual DateTime DataCriacao { get; set; } 
     }
 }

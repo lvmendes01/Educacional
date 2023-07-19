@@ -1,0 +1,17 @@
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Servico.deps.json
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Servico.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Servico.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\bin\Debug\net6.0\Lvmendes.Acesso.Repositorio.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.csproj.CopyComplete
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\refint\Lvmendes.Acesso.Servico.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\Lvmendes.Acesso.Servico.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Servico\obj\Debug\net6.0\ref\Lvmendes.Acesso.Servico.dll

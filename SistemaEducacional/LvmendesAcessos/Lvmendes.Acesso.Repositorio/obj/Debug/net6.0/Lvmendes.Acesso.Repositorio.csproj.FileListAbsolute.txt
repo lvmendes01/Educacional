@@ -1,0 +1,15 @@
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\bin\Debug\net6.0\Lvmendes.Acesso.Repositorio.deps.json
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\bin\Debug\net6.0\Lvmendes.Acesso.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\bin\Debug\net6.0\Lvmendes.Acesso.Repositorio.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.csproj.CopyComplete
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\refint\Lvmendes.Acesso.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\Lvmendes.Acesso.Repositorio.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Repositorio\obj\Debug\net6.0\ref\Lvmendes.Acesso.Repositorio.dll

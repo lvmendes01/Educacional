@@ -1,0 +1,12 @@
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.deps.json
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\bin\Debug\net6.0\Lvmendes.Acesso.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\refint\Lvmendes.Acesso.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\Lvmendes.Acesso.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesAcessos\Lvmendes.Acesso.Entidades\obj\Debug\net6.0\ref\Lvmendes.Acesso.Entidades.dll

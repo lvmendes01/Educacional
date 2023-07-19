@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lvmendes.Acesso.Entidades\Lvmendes.Acesso.Entidades.csproj" />
+    <ProjectReference Include="..\Lvmendes.Acesso.Repositorio\Lvmendes.Acesso.Repositorio.csproj" />
   </ItemGroup>
 
 </Project>

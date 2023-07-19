@@ -423,7 +423,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Lvmendes.Acesso.Entidades": "1.0.0"
+          "Lvmendes.Acesso.Entidades": "1.0.0",
+          "Lvmendes.Acesso.Repositorio": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Lvmendes.Acesso.Servico.dll": {}

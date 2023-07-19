@@ -10,7 +10,7 @@ namespace Lvmendes.Acesso.Repositorio
 {
     public class PerfilRepositorio : ComumRepositorio<PerfilEntidade>, IPerfilRepositorio
     {
-        public PerfilRepositorio(ComumBDContext _context) : base(_context)
+        public PerfilRepositorio(AcessoDBContext _context) : base(_context)
         {
         }
 
