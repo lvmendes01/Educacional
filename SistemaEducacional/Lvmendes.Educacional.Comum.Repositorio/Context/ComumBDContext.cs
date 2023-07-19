@@ -17,6 +17,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio
         }
 
         public DbSet<CursoEntidade> Cursos { get; set; }
+        public DbSet<TurnoEntidade> Turnos { get; set; }
 
 
     }

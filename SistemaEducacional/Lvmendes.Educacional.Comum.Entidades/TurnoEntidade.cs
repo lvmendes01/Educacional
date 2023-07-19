@@ -8,5 +8,6 @@ namespace Lvmendes.Educacional.Comum.Entidades
 {
     public class TurnoEntidade : IdentificadorEntidade
     {
+        public virtual string NomeTurno { get; set; }
     }
 }
