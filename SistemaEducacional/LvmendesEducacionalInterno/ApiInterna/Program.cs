@@ -21,6 +21,10 @@ builder.Services.AddScoped<ICursoRepositorio, CursoRepositorio>();
 builder.Services.AddScoped<ITurnoServico, TurnoServico>();
 builder.Services.AddScoped<ITurnoRepositorio, TurnoRepositorio>();
 
+builder.Services.AddScoped<IProfessorServico, ProfessorServico>();
+builder.Services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
+
+
 
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
