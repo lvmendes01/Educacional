@@ -227,6 +227,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj"
+              },
               "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Repositorio\\Lvmendes.Educacional.Comum.Repositorio.csproj": {
                 "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Repositorio\\Lvmendes.Educacional.Comum.Repositorio.csproj"
               },

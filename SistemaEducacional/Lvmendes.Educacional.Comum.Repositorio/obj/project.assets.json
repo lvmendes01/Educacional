@@ -335,6 +335,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "Lvmendes.Educacional.Comum.Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Lvmendes.Educacional.Comum.Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lvmendes.Educacional.Comum.Entidades.dll": {}
+        }
       }
     }
   },
@@ -980,10 +990,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Lvmendes.Educacional.Comum.Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Lvmendes.Educacional.Comum.Entidades/Lvmendes.Educacional.Comum.Entidades.csproj",
+      "msbuildProject": "../Lvmendes.Educacional.Comum.Entidades/Lvmendes.Educacional.Comum.Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Lvmendes.Educacional.Comum.Entidades >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.9",
@@ -1017,7 +1033,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj": {
+              "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

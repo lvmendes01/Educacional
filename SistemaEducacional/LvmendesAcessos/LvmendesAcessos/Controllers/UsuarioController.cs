@@ -29,6 +29,31 @@ namespace LvmendesAcessos.Controllers
         }
 
 
+
+
+        
+
+        /// <summary>
+        /// Lista os itens da To-do list.
+        /// </summary>
+        /// <returns>Os itens da To-do list</returns>
+        /// <response code="200">Returna os itens da To-do list cadastrados</response>
+        [HttpGet("Login")]
+        public ActionResult<RetornoApi> Login(string login , string senha)
+        {
+            var retornoChamado = servico.Login(login, senha);
+            RetornoApi retorno = new RetornoApi
+            {
+                Resultado = retornoChamado,
+                Status = retornoChamado != null,
+                Mensagem = retornoChamado == null ? "UsuarioEntidades não Encontrado" : string.Empty
+
+            };
+            return retorno;
+        }
+
+
+
         /// <summary>
         /// Lista os itens da To-do list.
         /// </summary>

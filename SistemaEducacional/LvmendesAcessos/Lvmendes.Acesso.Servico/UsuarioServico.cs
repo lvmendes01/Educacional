@@ -39,6 +39,11 @@ namespace Lvmendes.Educacional.Comum.Servico
             return _repositorio.Deletar(predicate);
         }
 
+        public UsuarioEntidade Login(string login, string senha)
+        {
+            return _repositorio.Primeiro(s=>s.Login == login && s.Senha == senha);
+        }
+
         public List<UsuarioEntidade> ObterFiltros(Expression<Func<UsuarioEntidade, bool>> predicate)
         {
             return _repositorio.ObterFiltros(predicate);

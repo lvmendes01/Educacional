@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ApiInterna/1.0.0": {
         "dependencies": {
+          "Lvmendes.Educacional.Comum.Entidades": "1.0.0",
           "Lvmendes.Educacional.Comum.Repositorio": "1.0.0",
           "Lvmendes.Educacional.Comum.Servico": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",

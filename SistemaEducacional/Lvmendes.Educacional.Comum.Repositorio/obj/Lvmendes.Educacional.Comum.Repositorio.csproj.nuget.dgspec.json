@@ -4,6 +4,60 @@
     "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Repositorio\\Lvmendes.Educacional.Comum.Repositorio.csproj": {}
   },
   "projects": {
+    "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj",
+        "projectName": "Lvmendes.Educacional.Comum.Entidades",
+        "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj",
+        "packagesPath": "C:\\Users\\leonardo.mendes\\.nuget\\packages\\",
+        "outputPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\leonardo.mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Repositorio\\Lvmendes.Educacional.Comum.Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +81,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
