@@ -1,0 +1,268 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\LvmendesAcessos\\LvmendesAcessos.csproj": {}
+  },
+  "projects": {
+    "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj",
+        "projectName": "Lvmendes.Acesso.Entidades",
+        "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj",
+        "packagesPath": "C:\\Users\\leonardo.mendes\\.nuget\\packages\\",
+        "outputPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\leonardo.mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj",
+        "projectName": "Lvmendes.Acesso.Repositorio",
+        "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj",
+        "packagesPath": "C:\\Users\\leonardo.mendes\\.nuget\\packages\\",
+        "outputPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\leonardo.mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Servico\\Lvmendes.Acesso.Servico.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Servico\\Lvmendes.Acesso.Servico.csproj",
+        "projectName": "Lvmendes.Acesso.Servico",
+        "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Servico\\Lvmendes.Acesso.Servico.csproj",
+        "packagesPath": "C:\\Users\\leonardo.mendes\\.nuget\\packages\\",
+        "outputPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Servico\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\leonardo.mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Entidades\\Lvmendes.Acesso.Entidades.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\LvmendesAcessos\\LvmendesAcessos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\LvmendesAcessos\\LvmendesAcessos.csproj",
+        "projectName": "LvmendesAcessos",
+        "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\LvmendesAcessos\\LvmendesAcessos.csproj",
+        "packagesPath": "C:\\Users\\leonardo.mendes\\.nuget\\packages\\",
+        "outputPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\LvmendesAcessos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\leonardo.mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Repositorio\\Lvmendes.Acesso.Repositorio.csproj"
+              },
+              "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Servico\\Lvmendes.Acesso.Servico.csproj": {
+                "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\LvmendesAcessos\\Lvmendes.Acesso.Servico\\Lvmendes.Acesso.Servico.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
