@@ -1,0 +1,12 @@
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.deps.json
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\refint\Lvmendes.Educacional.Comum.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Entidades\obj\Debug\net6.0\ref\Lvmendes.Educacional.Comum.Entidades.dll

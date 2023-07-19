@@ -41,6 +41,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio
             try
             {
                 Context.Set<T>().Add(entity);
+                Commit();
                 return "Ok";
             }
             catch (Exception ex)
@@ -53,6 +54,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio
             try
             {
                 Context.Entry(entity).State = EntityState.Modified;
+                Commit();
                 return "Atualizar com sucesso!!";
             }
             catch (Exception ex)
