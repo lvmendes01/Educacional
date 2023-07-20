@@ -3,6 +3,7 @@ using System;
 using Lvmendes.Educacional.Comum.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 {
     [DbContext(typeof(ComumBDContext))]
-    partial class ComumBDContextModelSnapshot : ModelSnapshot
+    [Migration("20230720203656_cidades")]
+    partial class cidades
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,9 +31,6 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<long?>("EstadoEntidadeId")
-                        .HasColumnType("bigint");
-
                     b.Property<long>("EstadoId")
                         .HasColumnType("bigint");
 
@@ -40,7 +40,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EstadoEntidadeId");
+                    b.HasIndex("EstadoId");
 
                     b.ToTable("Cidades");
                 });
@@ -210,9 +210,13 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.CidadeEntidade", b =>
                 {
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", null)
+                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", "Estado")
                         .WithMany("Cidades")
-                        .HasForeignKey("EstadoEntidadeId");
+                        .HasForeignKey("EstadoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Estado");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EnderecoEntidade", b =>

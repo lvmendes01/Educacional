@@ -3,6 +3,7 @@ using System;
 using Lvmendes.Educacional.Comum.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 {
     [DbContext(typeof(ComumBDContext))]
-    partial class ComumBDContextModelSnapshot : ModelSnapshot
+    [Migration("20230720210908_cidades ajustes")]
+    partial class cidadesajustes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

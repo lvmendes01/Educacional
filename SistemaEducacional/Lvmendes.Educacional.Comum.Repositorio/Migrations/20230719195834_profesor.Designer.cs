@@ -3,6 +3,7 @@ using System;
 using Lvmendes.Educacional.Comum.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,16 +11,18 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 {
     [DbContext(typeof(ComumBDContext))]
-    partial class ComumBDContextModelSnapshot : ModelSnapshot
+    [Migration("20230719195834_profesor")]
+    partial class profesor
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.CidadeEntidade", b =>
+            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.CidadeEndereco", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -28,10 +31,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<long?>("EstadoEntidadeId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("EstadoId")
+                    b.Property<long?>("EstadoEnderecoId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("NomeCidade")
@@ -40,9 +40,9 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EstadoEntidadeId");
+                    b.HasIndex("EstadoEnderecoId");
 
-                    b.ToTable("Cidades");
+                    b.ToTable("CidadeEndereco");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.CursoEntidade", b =>
@@ -103,7 +103,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.ToTable("EnderecoEntidade");
                 });
 
-            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", b =>
+            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EstadoEndereco", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -122,7 +122,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Estados");
+                    b.ToTable("EstadoEndereco");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.ProfessorEntidade", b =>
@@ -208,22 +208,22 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.ToTable("Turnos");
                 });
 
-            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.CidadeEntidade", b =>
+            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.CidadeEndereco", b =>
                 {
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", null)
+                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.EstadoEndereco", null)
                         .WithMany("Cidades")
-                        .HasForeignKey("EstadoEntidadeId");
+                        .HasForeignKey("EstadoEnderecoId");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EnderecoEntidade", b =>
                 {
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.CidadeEntidade", "Cidade")
+                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.CidadeEndereco", "Cidade")
                         .WithMany()
                         .HasForeignKey("CidadeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", "Estado")
+                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.EstadoEndereco", "Estado")
                         .WithMany()
                         .HasForeignKey("EstadoId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -252,7 +252,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                         .HasForeignKey("ProfessorEntidadeId");
                 });
 
-            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", b =>
+            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EstadoEndereco", b =>
                 {
                     b.Navigation("Cidades");
                 });
