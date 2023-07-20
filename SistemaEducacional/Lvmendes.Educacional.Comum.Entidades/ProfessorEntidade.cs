@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lvmendes.Educacional.Comum.Entidades
 {
-    public class ProfessorEntidade : IdentificadorEntidade
+    public class ProfessorEntidade : PessoaFisicaEntidade
     {
+        public virtual string Matricula { get; set; }
+
     }
 }

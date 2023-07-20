@@ -1,0 +1,17 @@
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.deps.json
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.runtimeconfig.json
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.csproj.CopyComplete
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\refint\Lvmendes.Educacional.Comum.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.genruntimeconfig.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Repositorio\obj\Debug\net6.0\ref\Lvmendes.Educacional.Comum.Repositorio.dll
