@@ -10,11 +10,11 @@ namespace Lvmendes.Educacional.Comum.Modelo
     public class HorarioModelo :IdentificadorModelo
     {
         public int DiaSemana { get; set; }
-        public MateriasModelo MateriaDisciplina { get; set; }
+        public Int64 MateriaDisciplinaId { get; set; }
         public TimeSpan HoraInicio { get; set; }
 
         public TimeSpan HoraFim { get; set; }
-        public ProfessorModelo ProfessorAula { get; set; }
+        public Int64 ProfessorAulaId { get; set; }
         public HorarioEntidade Transformar(HorarioModelo objeto)
         {
 
@@ -22,11 +22,11 @@ namespace Lvmendes.Educacional.Comum.Modelo
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
-                DiaSemana = (EnumSemana) objeto.DiaSemana,
-                HoraFim= objeto.HoraFim,
+                DiaSemana = (EnumSemana)objeto.DiaSemana,
+                HoraFim = objeto.HoraFim,
                 HoraInicio = objeto.HoraInicio,
-                MateriaDisciplina = MateriaDisciplina.Transformar(objeto.MateriaDisciplina),
-                ProfessorAula = ProfessorAula.Transformar(objeto.ProfessorAula),
+                MateriaDisciplina = new MateriasEntidade { Id = objeto.MateriaDisciplinaId },
+                ProfessorAula = new ProfessorEntidade { Id = objeto.ProfessorAulaId }
                 
             };
         }
@@ -40,8 +40,8 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 DiaSemana = (int) objeto.DiaSemana,
                 HoraFim= objeto.HoraFim,
                 HoraInicio = objeto.HoraInicio,
-                MateriaDisciplina = MateriaDisciplina.Transformar(objeto.MateriaDisciplina),
-                ProfessorAula = ProfessorAula.Transformar(objeto.ProfessorAula),
+                MateriaDisciplinaId = objeto.MateriaDisciplina.Id,
+                ProfessorAulaId =  objeto.ProfessorAula.Id
             };
         }
 

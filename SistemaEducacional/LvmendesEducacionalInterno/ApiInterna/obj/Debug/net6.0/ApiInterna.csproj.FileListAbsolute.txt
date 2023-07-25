@@ -52,3 +52,6 @@ C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.pdb
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.genruntimeconfig.cache
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ref\ApiInterna.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Modelo.dll
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Modelo.pdb
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.MvcApplicationPartsAssemblyInfo.cs

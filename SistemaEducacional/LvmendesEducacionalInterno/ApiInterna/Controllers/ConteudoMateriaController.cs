@@ -1,4 +1,5 @@
 ﻿using Lvmendes.Educacional.Comum.Entidades;
+using Lvmendes.Educacional.Comum.Modelo;
 using Lvmendes.Educacional.Comum.Servico.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,9 +19,9 @@ namespace ApiInterna.Controllers
         [HttpPost("Salvar")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<RetornoApi> Salvar(ConteudoMateriaEntidade item)
+        public ActionResult<RetornoApi> Salvar(ConteudoMateriaModelo item)
         {
-            servico.Adicionar(item);
+            servico.Adicionar(item.Transformar(item));
             return new RetornoApi
             {
                 Resultado = true,

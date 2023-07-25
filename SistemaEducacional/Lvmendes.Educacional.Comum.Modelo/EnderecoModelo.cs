@@ -8,8 +8,8 @@ namespace Lvmendes.Educacional.Comum.Modelo
         public virtual string Cep { get; set; }
         public virtual string Numero { get; set; }
         public virtual string Complemento { get; set; }
-        public virtual CidadeModelo Cidade { get; set; }
-        public virtual EstadoModelo Estado { get; set; }
+        public virtual Int64 CidadeId { get; set; }
+        public virtual Int64 EstadoId { get; set; }
         public EnderecoEntidade Transformar(EnderecoModelo objeto)
         {
 
@@ -18,9 +18,9 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,Cep = objeto.Cep,
                 Numero = objeto.Numero, 
-                Cidade = Cidade.Transformar(objeto.Cidade),
+                Cidade = new CidadeEntidade { Id = objeto.CidadeId},
                 Complemento = objeto.Complemento,
-                Estado = Estado.Transformar(objeto.Estado),
+                Estado = new EstadoEntidade { Id= objeto.EstadoId},
                 Logradouro = objeto.Logradouro,
                 
                
@@ -35,9 +35,9 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 DataCriacao = objeto.DataCriacao,
                 Cep = objeto.Cep,
                 Numero = objeto.Numero,
-                Cidade = Cidade.Transformar(objeto.Cidade),
+                CidadeId = objeto.Cidade.Id,
                 Complemento = objeto.Complemento,
-                Estado = Estado.Transformar(objeto.Estado),
+                EstadoId = objeto.Estado.Id,
                 Logradouro = objeto.Logradouro,
             };
         }

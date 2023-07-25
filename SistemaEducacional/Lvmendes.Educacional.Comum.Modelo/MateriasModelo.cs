@@ -13,17 +13,23 @@ namespace Lvmendes.Educacional.Comum.Modelo
         public ProfessorModelo ProfessorTitular { get; set; }
         public int CargaHora { get; set; }
 
-        public IList<ConteudoMateriaModelo> conteudoMaterias { get; set; }
+        public IList<Int64> conteudoMaterias { get; set; }
         public MateriasEntidade Transformar(MateriasModelo objeto)
         {
+            var lista = new List<ConteudoMateriaEntidade>();
+
+            objeto.conteudoMaterias.ToList().ForEach(s =>
+            {
+                lista.Add(new ConteudoMateriaEntidade { Id = s });
+            });
 
             return new MateriasEntidade
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 CargaHora = objeto.CargaHora,
-                conteudoMaterias = (List<ConteudoMateriaEntidade>)objeto.conteudoMaterias,
-                ProfessorTitular = ProfessorTitular.Transformar(objeto.ProfessorTitular),
+                conteudoMaterias = lista,
+                ProfessorTitular = new ProfessorEntidade { Id=objeto.ProfessorTitular.Id },
             };
         }
         public MateriasModelo Transformar(MateriasEntidade objeto)
@@ -34,7 +40,7 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 CargaHora = objeto.CargaHora,
-                conteudoMaterias = (IList<ConteudoMateriaModelo>)objeto.conteudoMaterias,
+                conteudoMaterias = objeto.conteudoMaterias.Select(s=>s.Id).ToList(),
                 ProfessorTitular = ProfessorTitular.Transformar(objeto.ProfessorTitular),
             };
         }

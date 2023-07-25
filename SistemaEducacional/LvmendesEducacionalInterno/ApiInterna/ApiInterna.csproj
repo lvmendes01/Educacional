@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Lvmendes.Educacional.Comum.Entidades\Lvmendes.Educacional.Comum.Entidades.csproj" />
+    <ProjectReference Include="..\..\Lvmendes.Educacional.Comum.Modelo\Lvmendes.Educacional.Comum.Modelo.csproj" />
     <ProjectReference Include="..\..\Lvmendes.Educacional.Comum.Repositorio\Lvmendes.Educacional.Comum.Repositorio.csproj" />
     <ProjectReference Include="..\..\Lvmendes.Educacional.Comum.Servico\Lvmendes.Educacional.Comum.Servico.csproj" />
   </ItemGroup>

@@ -1,0 +1,17 @@
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.deps.json
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.csproj.CopyComplete
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\refint\Lvmendes.Educacional.Comum.Servico.dll
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.pdb
+C:\___A\Educacional\SistemaEducacional\Lvmendes.Educacional.Comum.Servico\obj\Debug\net6.0\ref\Lvmendes.Educacional.Comum.Servico.dll
