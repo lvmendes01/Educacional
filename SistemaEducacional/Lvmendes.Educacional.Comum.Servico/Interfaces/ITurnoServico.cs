@@ -1,4 +1,5 @@
-﻿using Lvmendes.Educacional.Comum.Entidades;
+﻿
+using Lvmendes.Educacional.Comum.Entidades;
 
 namespace Lvmendes.Educacional.Comum.Servico.Interfaces
 {

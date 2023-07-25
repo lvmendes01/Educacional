@@ -8,15 +8,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolucaoInterna", "SolucaoIn
 		LvmendesEducacionalInterno\LvmendesEducacionalInterno.sln = LvmendesEducacionalInterno\LvmendesEducacionalInterno.sln
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Entidades", "Lvmendes.Educacional.Comum.Entidades\Lvmendes.Educacional.Comum.Entidades.csproj", "{A10C1922-10E2-471C-B395-82D13595DC41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Entidades", "Lvmendes.Educacional.Comum.Entidades\Lvmendes.Educacional.Comum.Entidades.csproj", "{A10C1922-10E2-471C-B395-82D13595DC41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Servico", "Lvmendes.Educacional.Comum.Servico\Lvmendes.Educacional.Comum.Servico.csproj", "{138FBF7F-0D85-4B84-AE6F-57476EDE3C1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Servico", "Lvmendes.Educacional.Comum.Servico\Lvmendes.Educacional.Comum.Servico.csproj", "{138FBF7F-0D85-4B84-AE6F-57476EDE3C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Repositorio", "Lvmendes.Educacional.Comum.Repositorio\Lvmendes.Educacional.Comum.Repositorio.csproj", "{43292472-274D-48F7-AA95-ECE49BBB7691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Repositorio", "Lvmendes.Educacional.Comum.Repositorio\Lvmendes.Educacional.Comum.Repositorio.csproj", "{43292472-274D-48F7-AA95-ECE49BBB7691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Util", "Lvmendes.Educacional.Comum.Util\Lvmendes.Educacional.Comum.Util.csproj", "{ED06F92C-65E9-4260-A221-BFD0E47D1700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Util", "Lvmendes.Educacional.Comum.Util\Lvmendes.Educacional.Comum.Util.csproj", "{ED06F92C-65E9-4260-A221-BFD0E47D1700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Testes", "Lvmendes.Educacional.Comum.Testes\Lvmendes.Educacional.Comum.Testes.csproj", "{E4790A98-8FB7-4350-AAA7-F25774DDA1F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Testes", "Lvmendes.Educacional.Comum.Testes\Lvmendes.Educacional.Comum.Testes.csproj", "{E4790A98-8FB7-4350-AAA7-F25774DDA1F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Modelo", "Lvmendes.Educacional.Comum.Modelo\Lvmendes.Educacional.Comum.Modelo.csproj", "{29F961A2-9ED1-4B23-9876-91F807E454CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{E4790A98-8FB7-4350-AAA7-F25774DDA1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4790A98-8FB7-4350-AAA7-F25774DDA1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4790A98-8FB7-4350-AAA7-F25774DDA1F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F961A2-9ED1-4B23-9876-91F807E454CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F961A2-9ED1-4B23-9876-91F807E454CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F961A2-9ED1-4B23-9876-91F807E454CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F961A2-9ED1-4B23-9876-91F807E454CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

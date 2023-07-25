@@ -28,6 +28,14 @@ builder.Services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
 builder.Services.AddScoped<ICidadeServico, CidadeServico>();
 builder.Services.AddScoped<ICidadeRepositorio, CidadeRepositorio>();
 
+builder.Services.AddScoped<ISalaServico, SalaServico>();
+builder.Services.AddScoped<ISalaRepositorio, SalaRepositorio>();
+
+builder.Services.AddScoped<IHorariosServico, HorariosServico>();
+builder.Services.AddScoped<IHorariosRepositorio, HorariosRepositorio>();
+
+builder.Services.AddScoped<IConteudoMateriaServico, ConteudoMateriaServico>();
+builder.Services.AddScoped<IConteudoMateriaRepositorio, ConteudoMateriaRepositorio>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

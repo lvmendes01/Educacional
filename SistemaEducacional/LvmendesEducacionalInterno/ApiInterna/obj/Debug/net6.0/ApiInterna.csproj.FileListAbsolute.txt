@@ -1,3 +1,9 @@
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.csproj.AssemblyReference.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.GeneratedMSBuildEditorConfig.editorconfig
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.AssemblyInfoInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.AssemblyInfo.cs
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.csproj.CoreCompileInputs.cache
+C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.MvcApplicationPartsAssemblyInfo.cache
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\appsettings.Development.json
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\appsettings.json
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\ApiInterna.exe
@@ -37,13 +43,6 @@ C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Entidades.pdb
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Repositorio.pdb
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\bin\Debug\net6.0\Lvmendes.Educacional.Comum.Servico.pdb
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.csproj.AssemblyReference.cache
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.GeneratedMSBuildEditorConfig.editorconfig
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.AssemblyInfoInputs.cache
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.AssemblyInfo.cs
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.csproj.CoreCompileInputs.cache
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.MvcApplicationPartsAssemblyInfo.cs
-C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\ApiInterna.MvcApplicationPartsAssemblyInfo.cache
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\staticwebassets.build.json
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\staticwebassets.development.json
 C:\___A\Educacional\SistemaEducacional\LvmendesEducacionalInterno\ApiInterna\obj\Debug\net6.0\scopedcss\bundle\ApiInterna.styles.css
