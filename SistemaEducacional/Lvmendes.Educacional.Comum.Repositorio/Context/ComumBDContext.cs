@@ -23,7 +23,10 @@ namespace Lvmendes.Educacional.Comum.Repositorio
         public DbSet<ProfessorEntidade> Professores { get; set; }
         public DbSet<CidadeEntidade> Cidades { get; set; }
         public DbSet<EstadoEntidade> Estados { get; set; }
+        public DbSet<SalaEntidade> Salas { get; set; }
+        public DbSet<ConteudoMateriaEntidade> ConteudosMaterias { get; set; }
+        public DbSet<HorarioEntidade> Horarios { get; set; }
 
-     
+
     }
 }

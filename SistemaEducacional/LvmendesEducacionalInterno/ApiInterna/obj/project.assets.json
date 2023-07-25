@@ -405,6 +405,19 @@
           "bin/placeholder/Lvmendes.Educacional.Comum.Entidades.dll": {}
         }
       },
+      "Lvmendes.Educacional.Comum.Modelo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Lvmendes.Educacional.Comum.Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lvmendes.Educacional.Comum.Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lvmendes.Educacional.Comum.Modelo.dll": {}
+        }
+      },
       "Lvmendes.Educacional.Comum.Repositorio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1185,6 +1198,11 @@
       "path": "../../Lvmendes.Educacional.Comum.Entidades/Lvmendes.Educacional.Comum.Entidades.csproj",
       "msbuildProject": "../../Lvmendes.Educacional.Comum.Entidades/Lvmendes.Educacional.Comum.Entidades.csproj"
     },
+    "Lvmendes.Educacional.Comum.Modelo/1.0.0": {
+      "type": "project",
+      "path": "../../Lvmendes.Educacional.Comum.Modelo/Lvmendes.Educacional.Comum.Modelo.csproj",
+      "msbuildProject": "../../Lvmendes.Educacional.Comum.Modelo/Lvmendes.Educacional.Comum.Modelo.csproj"
+    },
     "Lvmendes.Educacional.Comum.Repositorio/1.0.0": {
       "type": "project",
       "path": "../../Lvmendes.Educacional.Comum.Repositorio/Lvmendes.Educacional.Comum.Repositorio.csproj",
@@ -1199,6 +1217,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Lvmendes.Educacional.Comum.Entidades >= 1.0.0",
+      "Lvmendes.Educacional.Comum.Modelo >= 1.0.0",
       "Lvmendes.Educacional.Comum.Repositorio >= 1.0.0",
       "Lvmendes.Educacional.Comum.Servico >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
@@ -1235,6 +1254,9 @@
           "projectReferences": {
             "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj": {
               "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Entidades\\Lvmendes.Educacional.Comum.Entidades.csproj"
+            },
+            "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Modelo\\Lvmendes.Educacional.Comum.Modelo.csproj": {
+              "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Modelo\\Lvmendes.Educacional.Comum.Modelo.csproj"
             },
             "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Repositorio\\Lvmendes.Educacional.Comum.Repositorio.csproj": {
               "projectPath": "C:\\___A\\Educacional\\SistemaEducacional\\Lvmendes.Educacional.Comum.Repositorio\\Lvmendes.Educacional.Comum.Repositorio.csproj"

@@ -1,4 +1,5 @@
 ﻿using Lvmendes.Educacional.Comum.Entidades;
+using Lvmendes.Educacional.Comum.Modelo;
 using Lvmendes.Educacional.Comum.Servico.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
