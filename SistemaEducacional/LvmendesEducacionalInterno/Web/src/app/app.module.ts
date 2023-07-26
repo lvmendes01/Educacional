@@ -7,12 +7,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CadastroPerfilComponent } from './_components/perfil';
-import { CadastroPermissaoComponent } from './_components/permissao';
-import { ListaPermissaoComponent } from './_components/permissao/lista-permissao/lista-permissao.component';
-import { ListaPerfilComponent } from './_components/perfil/lista-perfil/lista-perfil.component';
-import { UsuarioComponent } from './_components/usuario/usuario.component';
-import { ListaUsuarioComponent } from './_components/usuario/lista-usuario/lista-usuario.component';
 import { ErrorInterceptor, JwtInterceptor } from './_helpers';
 
 
@@ -26,12 +20,6 @@ import { ErrorInterceptor, JwtInterceptor } from './_helpers';
     ],
     declarations: [
         AppComponent,
-        CadastroPerfilComponent,
-        CadastroPermissaoComponent,
-        ListaPermissaoComponent,
-        ListaPerfilComponent,
-        UsuarioComponent,
-        ListaUsuarioComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
