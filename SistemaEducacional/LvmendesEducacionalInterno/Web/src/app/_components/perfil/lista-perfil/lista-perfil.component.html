@@ -1,0 +1,28 @@
+
+<div class="card">
+    <h4 class="card-header">Lista Perfil</h4>
+    <div class="card-body">
+      
+      <button type="button" class="btn btn-primary" (click)="btnCadastro();">Cadastro</button>
+        <input class="form-control mt-2 mb-2" type="text" [(ngModel)]="searchText"  (input)="Search()" placeholder="Buscar pelo Nome" /> 
+        <table class="table table-striped table-bordered table-sm row-border hover" id="datatableexample">
+          <thead>
+            <tr>
+            
+              <th>Nome</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+                  <tr *ngFor="let group of perfis">
+                     
+                      <td>{{group.nomePerfil}}</td>
+                  </tr>
+          </tbody>
+        </table>
+    </div>
+
+
+
+    
+</div>
