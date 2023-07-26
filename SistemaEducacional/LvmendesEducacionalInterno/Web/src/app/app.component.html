@@ -1,21 +1,7 @@
-<!-- nav
-<nav class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="user">
-  <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
-    
 
-      <button class="btn btn-link nav-item nav-link" (click)="logout()">Sair</button>
-  </div>
-</nav>
-
-<div class="app-container" [ngClass]="{ 'bg-light': user }">
-  <router-outlet></router-outlet>
-</div> -->
-
-<!-- credits -->
 <div class="sidebar" [class.sidebar-close]="!openSidebar">
   <div class="logo-details">
-    <div class="logo"></div>
+    <div class="logo"> </div>
   </div>
   <ul class="nav-links" id="nav-links">
     <li *ngFor="let item of menuSidebar" #itemEl routerLinkActive="active">
@@ -55,6 +41,6 @@
   </div>
   <div class="home-view">
     <router-outlet></router-outlet>
-    This is a project for Dropdown Sidebar
+   
   </div>
 </section>
