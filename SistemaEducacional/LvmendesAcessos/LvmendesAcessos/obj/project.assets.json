@@ -398,6 +398,9 @@
       "Lvmendes.Acesso.Entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.9"
+        },
         "compile": {
           "bin/placeholder/Lvmendes.Acesso.Entidades.dll": {}
         },
