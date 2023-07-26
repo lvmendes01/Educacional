@@ -6,17 +6,20 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
    
-   // const loginAPI = 'https://tararoutray.com/demo/react-auth/login.php';
+const loginAPI = 'https://localhost:7044/api/Usuario/Login?';
 const navigate = useNavigate();
 const submitLoginForm = (event) => {
     event.preventDefault();
     const formElement = document.querySelector('#loginForm');
     const formData = new FormData(formElement);
     const formDataJSON = Object.fromEntries(formData);
+
+    loginAPI = loginAPI +"login=adm&senha=123";
+    
     const btnPointer = document.querySelector('#login-btn');
     btnPointer.innerHTML = 'Please wait..';
     btnPointer.setAttribute('disabled', true);
-    /*axios.post(loginAPI, formDataJSON).then((response) => {
+    axios.get(loginAPI).then((response) => {
         btnPointer.innerHTML = 'Login';
         btnPointer.removeAttribute('disabled');
         const data = response.data;
@@ -35,14 +38,9 @@ const submitLoginForm = (event) => {
         btnPointer.removeAttribute('disabled');
         alert("Oops! Some error occured.");
     });
-    */
+   
 
 
-    localStorage.clear();
-    localStorage.setItem('user-token', "asdasdas");
-    setTimeout(() => {
-        navigate('/');
-    }, 500);
 }
     return (
         <React.Fragment>

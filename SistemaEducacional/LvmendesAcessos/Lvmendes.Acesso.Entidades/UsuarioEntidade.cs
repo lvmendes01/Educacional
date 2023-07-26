@@ -10,6 +10,7 @@ namespace Lvmendes.Acesso.Entidades
     public class UsuarioEntidade: IdentificadorEntidade
     {
         public virtual string Login { get; set; }
+        public virtual string Nome { get; set; }
         public virtual string Senha { get; set; }
         [ForeignKey("PerfilId")]
         public virtual Int64 PerfilId { get; set; }
