@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lvmendes.Acesso.Repositorio.Migrations
 {
     [DbContext(typeof(AcessoDBContext))]
-    [Migration("20230726153440_uruario_nome")]
-    partial class uruario_nome
+    [Migration("20230726160231_usuario_nome")]
+    partial class usuario_nome
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

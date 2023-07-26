@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { AccountService } from 'src/app/_services';
+import Swal from 'sweetalert2';
 
 
 @Component({ templateUrl: 'login.component.html' })
@@ -42,10 +43,16 @@ export class LoginComponent implements OnInit {
         this.accountService.login(this.f['username'].value, this.f['password'].value)
             .pipe(first())
             .subscribe({
-                next: () => {
-                    // get return url from query parameters or default to home page
-                    const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-                    this.router.navigateByUrl(returnUrl);
+                next: (s) => {
+                    
+                    if(s.status){
+                        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+                        this.router.navigateByUrl(returnUrl);
+                    }else{
+                        Swal.fire(s.mensagem);
+                        this.loading = false;
+                    }
+                    
                 },
                 error: (error: string) => {
                     this.loading = false;

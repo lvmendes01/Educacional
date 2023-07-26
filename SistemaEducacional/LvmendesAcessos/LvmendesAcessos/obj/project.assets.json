@@ -410,7 +410,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Lvmendes.Acesso.Entidades": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.9"
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.9"
         },
         "compile": {
           "bin/placeholder/Lvmendes.Acesso.Repositorio.dll": {}

@@ -24,7 +24,7 @@ export class UsuarioService {
     }
 
     listar() {
-        return this.http.get<RetornoApi>(`${environment.apiUrl}Usuario/ListaUsuarios`);
+        return this.http.get<RetornoApi>(`${environment.apiUrl}Usuario/ObterUsuario`);
     }
 
 

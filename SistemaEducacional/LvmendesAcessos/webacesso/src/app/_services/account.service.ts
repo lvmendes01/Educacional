@@ -28,24 +28,17 @@ export class AccountService {
     login(username: string, password: string) {
 
 
-        
-        console.log(`${environment.apiUrl}Usuario/Login?login=${username}&senha=${password}`);
-        console.log(this.router.url); 
-        
-
         return this.http.get(`${environment.apiUrl}Usuario/Login?login=${username}&senha=${password}`)
-            
-        
-        .pipe(
+            .pipe(
             map((response: RetornoApi) => {
                 if(response.status)
                 {
                     localStorage.setItem('user', JSON.stringify(response.resultado));
                     let usuario = response.resultado as User;
                     this.userSubject.next(usuario);
-                    return response;
+                    
                 }
-                return null;
+                return response;
             })
         );
             
