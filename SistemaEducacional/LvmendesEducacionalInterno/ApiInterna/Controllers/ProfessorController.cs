@@ -21,11 +21,13 @@ namespace ApiInterna.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<RetornoApi> Salvar(ProfessorModelo item)
         {
-            servico.Adicionar(item.Transformar(item));
+            var retornoChamado = servico.Adicionar(item.Transformar(item));
             return new RetornoApi
             {
                 Resultado = true,
-                Status = true
+                Status = retornoChamado == "Ok",
+                Mensagem = retornoChamado == "Ok" ? "Cadastrado com Sucesso!" : retornoChamado
+
             };
         }
 
@@ -35,8 +37,8 @@ namespace ApiInterna.Controllers
         /// </summary>
         /// <returns>Os itens da To-do list</returns>
         /// <response code="200">Returna os itens da To-do list cadastrados</response>
-        [HttpGet("ObterProfessor")]
-        public ActionResult<RetornoApi> ObterProfessor(bool todos)
+        [HttpGet("Lista")]
+        public ActionResult<RetornoApi> Lista(bool todos)
         {
             var retornoChamado = servico.ObterTodos(todos);
             RetornoApi retorno = new RetornoApi

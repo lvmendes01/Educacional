@@ -8,6 +8,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorInterceptor, JwtInterceptor } from './_helpers';
+import { CadastrocursoComponent } from './_views/curso/cadastrocurso/cadastrocurso.component';
+import { ListacursosComponent } from './_views/curso/listacursos/listacursos.component';
+import { CursoService } from './_services/curso.service';
 
 
 @NgModule({
@@ -20,10 +23,13 @@ import { ErrorInterceptor, JwtInterceptor } from './_helpers';
     ],
     declarations: [
         AppComponent,
+        CadastrocursoComponent,
+        ListacursosComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+        CursoService
 
 
     ],

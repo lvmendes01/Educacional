@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { AccountService } from './_services';
-import { User } from './_models';
 import { map } from 'rxjs';
+import { User } from './_models';
 
 @Component({ selector: 'app-root', templateUrl: 'app.component.html',
 styleUrls: [ './app.component.css' ] })
@@ -18,19 +18,16 @@ export class AppComponent {
         icon: "bx bx-grid-alt",
         sub_menu: []
       }, {
-        link_name: "Category",
+        link_name: "Curso",
         link: null,
         icon: "bx bx-collection",
         sub_menu: [
           {
-            link_name: "HTML & CSS",
-            link: "/html-n-css",
+            link_name: "Cadastro",
+            link: "/cursoCadastro",
           }, {
-            link_name: "JavaScript",
-            link: "/javascript",
-          }, {
-            link_name: "PHP & MySQL",
-            link: "/php-n-mysql",
+            link_name: "Lista",
+            link: "/cursoListar",
           }
         ]
       }, 

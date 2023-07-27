@@ -1,0 +1,27 @@
+
+  <div class="card">
+    <div class="card-header">
+      Curso
+    </div>
+    <div class="card-body">
+        <form>
+         
+            <div class="form-group">
+              <label for="exampleInputPassword1">Nome</label>
+              <input type="text" [(ngModel)]="curso.nomeCurso" [ngModelOptions]="{standalone: true}" class="form-control"  >
+            </div>
+           
+          </form>
+        
+    </div>
+    <div class="card-footer">
+      <button [disabled]="loading" (click)="salvar()" class="btn btn-primary">
+        <span *ngIf="loading"  class="spinner-border spinner-border-sm me-1"></span>
+        <div *ngIf="curso.id ==0">Salvar Curso</div>
+        <div *ngIf="curso.id  > 0">Atualizar Curso</div> 
+        
+        
+    </button>
+        
+    </div>
+  </div>
