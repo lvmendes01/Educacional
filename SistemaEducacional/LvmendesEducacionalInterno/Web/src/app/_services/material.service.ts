@@ -23,7 +23,7 @@ export class MateriaService {
         return this.http.get<RetornoApi>(`${environment.apiUrlInterno}materias/Carregar?Id=${id}`);
     }
     atualizar(params: MateriaModel) {
-        return this.http.put(`${environment.apiUrlInterno}materia/Atualizar`, params);
+        return this.http.put(`${environment.apiUrlInterno}materias/Atualizar`, params);
     }
     deletar(id: string) {
         return this.http.delete(`${environment.apiUrlInterno}/users/${id}`)

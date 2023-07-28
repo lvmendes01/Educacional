@@ -20,6 +20,7 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 CargaHora = objeto.CargaHora,
+                Nome = Nome
             };
         }
         public MateriasModelo Transformar(MateriasEntidade objeto)
@@ -30,6 +31,7 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 CargaHora = objeto.CargaHora,
+                Nome = Nome
             };
         }
 

@@ -42,7 +42,7 @@ namespace Lvmendes.Educacional.Comum.Servico
 
         public List<CursoEntidade> ObterTodos(bool includes = false)
         {
-            return _repositorio.ObterTodos(includes);
+            return _repositorio.ObterTodos();
         }
 
         public CursoEntidade Primeiro(Expression<Func<CursoEntidade, bool>> predicate)

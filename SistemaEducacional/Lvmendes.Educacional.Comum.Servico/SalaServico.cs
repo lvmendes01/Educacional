@@ -42,7 +42,7 @@ namespace Lvmendes.Educacional.Comum.Servico
 
         public List<SalaEntidade> ObterTodos(bool includes = false)
         {
-            return _repositorio.ObterTodos(includes);
+            return _repositorio.ObterTodos();
         }
 
         public SalaEntidade Primeiro(Expression<Func<SalaEntidade, bool>> predicate)

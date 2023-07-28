@@ -42,7 +42,7 @@ namespace Lvmendes.Educacional.Comum.Servico
 
         public List<ConteudoMateriaEntidade> ObterTodos(bool includes = false)
         {
-            return _repositorio.ObterTodos(includes);
+            return _repositorio.ObterTodos();
         }
 
         public ConteudoMateriaEntidade Primeiro(Expression<Func<ConteudoMateriaEntidade, bool>> predicate)

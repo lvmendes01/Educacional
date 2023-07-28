@@ -13,4 +13,12 @@ export class EnderecoModel {
   estadoId: number=0
   cidade: CidadeModel=new CidadeModel
   estado: EstadoModel=new EstadoModel
+
+
+
+  public toString = () : string => {
+    return ` (${this.estado.nomeEstado + ' ' + this.cidade.nomeCidade + ' ' + this.logradouro + ' ' +this.numero + ' ' +this.cep})`;
+  }
+
+
 }

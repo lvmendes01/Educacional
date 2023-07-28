@@ -40,7 +40,7 @@ namespace ApiInterna.Controllers
         [HttpGet("Lista")]
         public ActionResult<RetornoApi> Lista(bool todos)
         {
-            var retornoChamado = servico.ObterTodos(todos);
+            var retornoChamado = servico.ObterTodos(true);
             RetornoApi retorno = new RetornoApi
             {
                 Resultado = retornoChamado,

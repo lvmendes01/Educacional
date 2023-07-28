@@ -42,7 +42,7 @@ namespace Lvmendes.Educacional.Comum.Servico
 
         public List<HorarioEntidade> ObterTodos(bool includes = false)
         {
-            return _repositorio.ObterTodos(includes);
+            return _repositorio.ObterTodos();
         }
 
         public HorarioEntidade Primeiro(Expression<Func<HorarioEntidade, bool>> predicate)

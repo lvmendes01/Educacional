@@ -18,7 +18,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Testes", "Lvmendes.Educacional.Comum.Testes\Lvmendes.Educacional.Comum.Testes.csproj", "{E4790A98-8FB7-4350-AAA7-F25774DDA1F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lvmendes.Educacional.Comum.Modelo", "Lvmendes.Educacional.Comum.Modelo\Lvmendes.Educacional.Comum.Modelo.csproj", "{29F961A2-9ED1-4B23-9876-91F807E454CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lvmendes.Educacional.Comum.Modelo", "Lvmendes.Educacional.Comum.Modelo\Lvmendes.Educacional.Comum.Modelo.csproj", "{29F961A2-9ED1-4B23-9876-91F807E454CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arquivos", "Arquivos", "{846D2BD2-ECD5-403E-A134-11F1B0455312}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{23B6521B-B61E-4EF7-92DB-A5563A98485A}"
+	ProjectSection(SolutionItems) = preProject
+		Estados_cidades.sql = Estados_cidades.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +60,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23B6521B-B61E-4EF7-92DB-A5563A98485A} = {846D2BD2-ECD5-403E-A134-11F1B0455312}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65FA3BAA-9452-4E12-A907-C16DC38375DF}

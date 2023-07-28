@@ -18,9 +18,20 @@ namespace Lvmendes.Educacional.Comum.Repositorio
             this.dbSet = _context.Set<T>();
         }
 
-        public List<T> ObterTodos(bool includes = false)
+        public List<T> ObterTodos(params string[] includes)
         {
-            return Context.Set<T>().ToList();
+            var result = Context.Set<T>().Where(s=>s==s);
+
+
+            if (includes != null)
+            {
+                foreach (string item in includes)
+                {
+                    result = result.Include(item).AsQueryable();
+                }
+            }
+
+            return result.ToList();
         }
 
         public List<T> ObterFiltros(Expression<Func<T, bool>> predicate)

@@ -9,7 +9,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Interfaces
 {
     public interface IComumRepositorio<T> where T : class
     {
-        List<T> ObterTodos(bool includes = false);
+        List<T> ObterTodos(string[] include = null);
         List<T> ObterFiltros(Expression<Func<T, bool>> predicate);
         T Procurar(params object[] key);
         T Primeiro(Expression<Func<T, bool>> predicate, params string[] include);

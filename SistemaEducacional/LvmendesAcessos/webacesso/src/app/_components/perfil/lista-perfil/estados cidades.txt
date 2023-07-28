@@ -1,0 +1,30 @@
+
+
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('São Paulo', 'SP', now());
+
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Paraná', 'PR', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Santa Catarina', 'SC', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Rio Grande do Sul', 'RS', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Mato Grosso do Sul', 'MS', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Rondônia', 'RO', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Acre', 'AC', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Amazonas', 'AM', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Roraima', 'RR', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Pará', 'PA', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Amapá', 'AP', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Tocantins', 'TO', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Maranhão', 'MA', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Rio Grande do Norte', 'RN', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Paraíba', 'PB', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Pernambuco', 'PE', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Alagoas', 'AL', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Sergipe', 'SE', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Bahia', 'BA', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Minas Gerais', 'MG', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Rio de Janeiro', 'RJ', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Mato Grosso', 'MT', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Goiás', 'GO', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Distrito Federal', 'DF', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Piauí', 'PI', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Ceará', 'CE', now());
+INSERT INTO bd_educacional.estados(`NomeEstado`,`Sigla`,`DataCriacao`)VALUES('Espírito Santo', 'ES', now());

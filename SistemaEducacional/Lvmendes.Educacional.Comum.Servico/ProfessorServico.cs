@@ -59,7 +59,15 @@ namespace Lvmendes.Educacional.Comum.Servico
 
         public List<ProfessorEntidade> ObterTodos(bool includes = false)
         {
-            return _repositorio.ObterTodos(includes);
+
+            if (includes)
+            {
+                String[] includesdados = new String[4] { "Endereco", "Endereco.Cidade", "Endereco.Estado", "Telefones" };
+
+                return _repositorio.ObterTodos(include: includesdados);
+            }
+            return _repositorio.ObterTodos();
+
         }
 
         public ProfessorEntidade Primeiro(Expression<Func<ProfessorEntidade, bool>> predicate)
