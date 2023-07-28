@@ -1,0 +1,27 @@
+
+  <div class="card">
+    <div class="card-header">
+      sala
+    </div>
+    <div class="card-body">
+        <form>
+         
+            <div class="form-group">
+              <label for="exampleInputPassword1">Nome/Número</label>
+              <input type="text" [(ngModel)]="sala.numeroSala" [ngModelOptions]="{standalone: true}" class="form-control"  >
+            </div>
+           
+          </form>
+        
+    </div>
+    <div class="card-footer">
+      <button [disabled]="loading" (click)="salvar()" class="btn btn-primary">
+        <span *ngIf="loading"  class="spinner-border spinner-border-sm me-1"></span>
+        <div *ngIf="sala.id ==0">Salvar sala</div>
+        <div *ngIf="sala.id  > 0">Atualizar sala</div> 
+        
+        
+    </button>
+        
+    </div>
+  </div>

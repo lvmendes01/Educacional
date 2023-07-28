@@ -1,0 +1,27 @@
+
+  <div class="card">
+    <div class="card-header">
+      turno
+    </div>
+    <div class="card-body">
+        <form>
+         
+            <div class="form-group">
+              <label for="exampleInputPassword1">Nome</label>
+              <input type="text" [(ngModel)]="turno.nomeTurno" [ngModelOptions]="{standalone: true}" class="form-control"  >
+            </div>
+           
+          </form>
+        
+    </div>
+    <div class="card-footer">
+      <button [disabled]="loading" (click)="salvar()" class="btn btn-primary">
+        <span *ngIf="loading"  class="spinner-border spinner-border-sm me-1"></span>
+        <div *ngIf="turno.id ==0">Salvar turno</div>
+        <div *ngIf="turno.id  > 0">Atualizar turno</div> 
+        
+        
+    </button>
+        
+    </div>
+  </div>

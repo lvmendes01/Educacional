@@ -132,7 +132,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.HasIndex("EstadoId");
 
-                    b.ToTable("EnderecoEntidade");
+                    b.ToTable("Enderecos");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.EstadoEntidade", b =>
@@ -213,7 +213,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.HasIndex("ProfessorTitularId");
 
-                    b.ToTable("MateriasEntidade");
+                    b.ToTable("Materias");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.ProfessorEntidade", b =>
@@ -296,7 +296,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
 
                     b.HasIndex("ProfessorEntidadeId");
 
-                    b.ToTable("TelefoneEntidade");
+                    b.ToTable("Telefones");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.TurnoEntidade", b =>

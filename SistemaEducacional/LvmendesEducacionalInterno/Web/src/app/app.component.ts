@@ -30,6 +30,45 @@ export class AppComponent {
             link: "/cursoListar",
           }
         ]
+      }, {
+        link_name: "Sala",
+        link: null,
+        icon: "bx bx-collection",
+        sub_menu: [
+          {
+            link_name: "Cadastro",
+            link: "/salaCadastro",
+          }, {
+            link_name: "Lista",
+            link: "/salaListar",
+          }
+        ]
+      }, {
+        link_name: "Turno",
+        link: null,
+        icon: "bx bx-collection",
+        sub_menu: [
+          {
+            link_name: "Cadastro",
+            link: "/turnoCadastro",
+          }, {
+            link_name: "Lista",
+            link: "/turnoListar",
+          }
+        ]
+      },  {
+        link_name: "Professor",
+        link: null,
+        icon: "bx bx-collection",
+        sub_menu: [
+          {
+            link_name: "Cadastro",
+            link: "/professorCadastro",
+          }, {
+            link_name: "Lista",
+            link: "/professorListar",
+          }
+        ]
       }, 
     ]
     user?: User | null;

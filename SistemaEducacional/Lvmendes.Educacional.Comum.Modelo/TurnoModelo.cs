@@ -17,6 +17,7 @@ namespace Lvmendes.Educacional.Comum.Modelo
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
+                NomeTurno = objeto.NomeTurno
             };
         }
         public TurnoModelo Transformar(TurnoEntidade objeto)
@@ -26,6 +27,7 @@ namespace Lvmendes.Educacional.Comum.Modelo
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
+                NomeTurno = objeto.NomeTurno
             };
         }
     }

@@ -50,5 +50,39 @@ namespace ApiInterna.Controllers
             };
             return retorno;
         }
+
+        [HttpPut("Atualizar")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<RetornoApi> Atualizar(TurnoModelo item)
+        {
+            var retornoChamado = servico.Atualizar(item.Transformar(item));
+            return new RetornoApi
+            {
+                Resultado = true,
+                Status = retornoChamado == "Atualizar com sucesso!!",
+                Mensagem = retornoChamado
+
+            };
+        }
+
+        /// <summary>
+        /// Lista os itens da To-do list.
+        /// </summary>
+        /// <returns>Os itens da To-do list</returns>
+        /// <response code="200">Returna os itens da To-do list cadastrados</response>
+        [HttpGet("Carregar")]
+        public ActionResult<RetornoApi> Carregar(Int64 Id)
+        {
+            var retornoChamado = servico.Procurar(Id);
+            RetornoApi retorno = new RetornoApi
+            {
+                Resultado = retornoChamado,
+                Status = retornoChamado != null,
+                Mensagem = retornoChamado == null ? "Item não Encontrado" : string.Empty
+
+            };
+            return retorno;
+        }
     }
 }

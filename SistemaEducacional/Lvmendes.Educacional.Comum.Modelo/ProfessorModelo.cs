@@ -18,6 +18,11 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 Matricula = objeto.Matricula,
+                Cpf = objeto.Cpf,
+                DataNascimento = objeto.DataNascimento,
+                Email = objeto.Email,
+                Endereco = Endereco.Transformar(objeto.Endereco),
+                Telefones = (IList<TelefoneEntidade>)objeto.Telefones.ToList()
             };
         }
         public ProfessorModelo Transformar(ProfessorEntidade objeto)
@@ -28,6 +33,11 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 Matricula=objeto.Matricula,
+                Cpf = objeto.Cpf,
+                DataNascimento = objeto.DataNascimento,
+                Email = objeto.Email,
+                Endereco = Endereco.Transformar(objeto.Endereco),
+                Telefones = (IList<TelefoneModelo>)objeto.Telefones.ToList()
             };
         }
             

@@ -37,6 +37,9 @@ builder.Services.AddScoped<IHorariosRepositorio, HorariosRepositorio>();
 builder.Services.AddScoped<IConteudoMateriaServico, ConteudoMateriaServico>();
 builder.Services.AddScoped<IConteudoMateriaRepositorio, ConteudoMateriaRepositorio>();
 
+builder.Services.AddScoped<IMateriasServico, MateriasServico>();
+builder.Services.AddScoped<IMateriasRepositorio, MateriasRepositorio>();
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ComumBDContext>(options => {

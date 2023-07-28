@@ -8,7 +8,7 @@
 
         public virtual EnderecoEntidade Endereco { get; set; }
         public virtual string Email { get; set; }
-        public virtual List<TelefoneEntidade> Telefones { get; set; }
+        public virtual IList<TelefoneEntidade> Telefones { get; set; }
 
     }
 }

@@ -30,20 +30,7 @@ namespace ApiInterna.Controllers
 
             };
         }
-        [HttpPut("Atualizar")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<RetornoApi> Atualizar(CursoModelo item)
-        {
-            var retornoChamado = servico.Atualizar(item.Transformar(item));
-            return new RetornoApi
-            {
-                Resultado = true,
-                Status = retornoChamado == "Atualizar com sucesso!!",
-                Mensagem = retornoChamado 
-
-            };
-        }
+      
 
 
         /// <summary>
@@ -64,7 +51,20 @@ namespace ApiInterna.Controllers
             };
             return retorno;
         }
+        [HttpPut("Atualizar")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<RetornoApi> Atualizar(CursoModelo item)
+        {
+            var retornoChamado = servico.Atualizar(item.Transformar(item));
+            return new RetornoApi
+            {
+                Resultado = true,
+                Status = retornoChamado == "Atualizar com sucesso!!",
+                Mensagem = retornoChamado
 
+            };
+        }
 
         /// <summary>
         /// Lista os itens da To-do list.

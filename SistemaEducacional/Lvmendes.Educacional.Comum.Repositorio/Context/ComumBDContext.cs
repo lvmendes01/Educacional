@@ -26,6 +26,9 @@ namespace Lvmendes.Educacional.Comum.Repositorio
         public DbSet<SalaEntidade> Salas { get; set; }
         public DbSet<ConteudoMateriaEntidade> ConteudosMaterias { get; set; }
         public DbSet<HorarioEntidade> Horarios { get; set; }
+        public DbSet<MateriasEntidade> Materias { get; set; }
+        public DbSet<EnderecoEntidade> Enderecos { get; set; }
+        public DbSet<TelefoneEntidade> Telefones { get; set; }
 
 
     }
