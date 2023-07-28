@@ -4,5 +4,6 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Interfaces
 {
     public interface IProfessorRepositorio : IComumRepositorio<ProfessorEntidade>
     {
+        string AtualizarProfessor(ProfessorEntidade entidade);
     }
 }

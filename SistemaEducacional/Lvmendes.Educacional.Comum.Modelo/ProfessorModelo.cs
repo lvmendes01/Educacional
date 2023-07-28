@@ -12,18 +12,32 @@ namespace Lvmendes.Educacional.Comum.Modelo
         public virtual string Matricula { get; set; }
         public ProfessorEntidade Transformar(ProfessorModelo objeto)
         {
-
-            return new ProfessorEntidade
+            var entidade = new ProfessorEntidade
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
                 Matricula = objeto.Matricula,
                 Cpf = objeto.Cpf,
+                Nome = objeto.Nome,
                 DataNascimento = objeto.DataNascimento,
                 Email = objeto.Email,
                 Endereco = Endereco.Transformar(objeto.Endereco),
-                Telefones = (IList<TelefoneEntidade>)objeto.Telefones.ToList()
             };
+
+
+            foreach (var item in objeto.Telefones)
+            {
+                entidade.Telefones.Add(new TelefoneEntidade
+                {
+                    DataCriacao = item.DataCriacao,
+                    DDD = item.DDD,
+                    Id = item.Id,
+                    Numero = item.Numero,
+
+                });
+            }
+
+            return entidade;
         }
         public ProfessorModelo Transformar(ProfessorEntidade objeto)
         {

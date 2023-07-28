@@ -12,7 +12,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Interfaces
         List<T> ObterTodos(bool includes = false);
         List<T> ObterFiltros(Expression<Func<T, bool>> predicate);
         T Procurar(params object[] key);
-        T Primeiro(Expression<Func<T, bool>> predicate);
+        T Primeiro(Expression<Func<T, bool>> predicate, params string[] include);
         string Adicionar(T entity);
         string Atualizar(T entity);
         string Deletar(Func<T, bool> predicate);

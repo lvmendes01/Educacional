@@ -69,6 +69,19 @@ export class AppComponent {
             link: "/professorListar",
           }
         ]
+      },  {
+        link_name: "Materia",
+        link: null,
+        icon: "bx bx-collection",
+        sub_menu: [
+          {
+            link_name: "Cadastro",
+            link: "/materiaCadastro",
+          }, {
+            link_name: "Lista",
+            link: "/materiaListar",
+          }
+        ]
       }, 
     ]
     user?: User | null;

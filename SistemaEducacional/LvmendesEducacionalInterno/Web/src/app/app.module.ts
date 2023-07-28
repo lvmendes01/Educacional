@@ -17,6 +17,8 @@ import { ListaturnosComponent } from './_views/turno/listaturnos/listaturnos.com
 import { CadastroturnoComponent } from './_views/turno/cadastroturno/cadastroturno.component';
 import { CadastroprofessorComponent } from './_views/professor/cadastroprofessor/cadastroprofessor.component';
 import { ListaprofessorsComponent } from './_views/professor/listaprofessores/listaprofessores.component';
+import { CadastromateriaComponent } from './_views/materia/cadastromateria/cadastromateria.component';
+import { ListamateriasComponent } from './_views/materia/listamaterias/listamaterias.component';
 
 
 @NgModule({
@@ -36,7 +38,10 @@ import { ListaprofessorsComponent } from './_views/professor/listaprofessores/li
         CadastroturnoComponent,
         ListaturnosComponent,
         CadastroprofessorComponent,
-        ListaprofessorsComponent
+        ListaprofessorsComponent,
+        CadastromateriaComponent,
+        ListamateriasComponent,
+        
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

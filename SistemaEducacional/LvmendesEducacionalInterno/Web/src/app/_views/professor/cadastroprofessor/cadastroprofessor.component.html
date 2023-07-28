@@ -12,6 +12,12 @@
                 <input type="text" [(ngModel)]="professor.matricula" [ngModelOptions]="{standalone: true}" class="form-control"  >
               </div>
             </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Cpf</label>
+                <input type="text" [(ngModel)]="professor.cpf" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
             <div class="col">
               <div class="form-group">
                 <label for="exampleInputPassword1">Nome</label>
@@ -26,7 +32,7 @@
             <div class="col-3">
               <div class="form-group">
                 <label for="exampleInputPassword1">Data Nascimento</label>
-                <input type="date" [(ngModel)]="professor.dataNascimento" [ngModelOptions]="{standalone: true}" class="form-control"  >
+                <input type="date" [ngModel]="professor.dataNascimento | date:'yyyy-MM-dd'" [ngModelOptions]="{standalone: true}" class="form-control"  >
               </div>
             </div>
             <div class="col">
@@ -53,7 +59,7 @@
             <div class="col-3">
               <div class="form-group">
                 <label for="inputState">Cidade</label>
-                <select  *ngIf="cidades.length > 0" [ngModel]="professor.endereco.cidadeId" [ngModelOptions]="{standalone: true}" (ngModelChange)="onChangeCidado($event)"  class="form-control">
+                <select  *ngIf="cidades.length > 0" [ngModel]="professor.endereco.cidadeId" [ngModelOptions]="{standalone: true}" (ngModelChange)="onChangeCidade($event)"  class="form-control">
                   <option selected>Selecione...</option>
                   <option *ngFor="let cidade of cidades" [ngValue]="cidade.id">{{cidade.nomeCidade}}</option>
                 </select>

@@ -1,6 +1,6 @@
 
 <div class="card">
-    <h4 class="card-header">Lista Cursos</h4>
+    <h4 class="card-header">Lista materias</h4>
     <div class="card-body">
       
         <input class="form-control mt-2 mb-2" type="text" [(ngModel)]="searchText"  (input)="Search()" placeholder="Buscar pelo Nome" /> 
@@ -14,13 +14,13 @@
           </thead>
           <tbody>
               
-                  <tr *ngFor="let group of cursos">
+                  <tr *ngFor="let group of materias">
                      
-                      <td>{{group.nomeCurso}}  </td>
+                      <td>{{group.nome}}  </td>
 
                       
 
-                      <td><a [routerLink]="['/cursoCadastro', group.id]">Editar</a></td>
+                      <td><a [routerLink]="['/materiaCadastro', group.id]">Editar</a></td>
                   </tr>
           </tbody>        </table>
     </div>

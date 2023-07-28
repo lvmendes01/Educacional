@@ -11,4 +11,6 @@ export class EnderecoModel {
   complemento: string=""
   cidadeId: number=0
   estadoId: number=0
+  cidade: CidadeModel=new CidadeModel
+  estado: EstadoModel=new EstadoModel
 }

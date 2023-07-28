@@ -14,20 +14,37 @@ namespace Lvmendes.Educacional.Comum.Servico
     {
 
         private IProfessorRepositorio _repositorio;
+        private ICidadeRepositorio _repositoriocidade;
 
-        public ProfessorServico(IProfessorRepositorio repositorio)
+        public ProfessorServico(IProfessorRepositorio repositorio, ICidadeRepositorio repositoriocidade)
         {
             _repositorio = repositorio;
+            _repositoriocidade = repositoriocidade;
         }
 
         public string Adicionar(ProfessorEntidade entity)
         {
+
+            if (entity.Endereco.Cidade.Id != 0)
+                entity.Endereco.Cidade = _repositoriocidade.CarregarCidadePeloId(entity.Endereco.Cidade.Id);
+
+            if (entity.Endereco.Estado.Id != 0)
+                entity.Endereco.Estado = _repositoriocidade.CarregarEstadoPeloId(entity.Endereco.Estado.Id);
+
+
+
             return _repositorio.Adicionar(entity);
         }
 
         public string Atualizar(ProfessorEntidade entity)
         {
-            return _repositorio.Atualizar(entity);
+            if (entity.Endereco.Cidade.Id != 0)
+                entity.Endereco.Cidade = _repositoriocidade.CarregarCidadePeloId(entity.Endereco.Cidade.Id);
+
+            if (entity.Endereco.Estado.Id != 0)
+                entity.Endereco.Estado = _repositoriocidade.CarregarEstadoPeloId(entity.Endereco.Estado.Id);
+
+            return _repositorio.AtualizarProfessor(entity);
         }
 
         public string Deletar(Func<ProfessorEntidade, bool> predicate)
@@ -47,7 +64,11 @@ namespace Lvmendes.Educacional.Comum.Servico
 
         public ProfessorEntidade Primeiro(Expression<Func<ProfessorEntidade, bool>> predicate)
         {
-            return _repositorio.Primeiro(predicate);
+            String[] includes = new String[4] { "Endereco", "Endereco.Cidade", "Endereco.Estado", "Telefones" };
+
+            var professor = _repositorio.Primeiro(predicate, includes);
+
+            return professor; 
         }
 
         public ProfessorEntidade Procurar(params object[] key)

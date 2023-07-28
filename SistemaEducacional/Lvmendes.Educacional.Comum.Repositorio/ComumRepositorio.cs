@@ -32,10 +32,18 @@ namespace Lvmendes.Educacional.Comum.Repositorio
         {
             return Context.Set<T>().Find(key);
         }
-        public T Primeiro(Expression<Func<T, bool>> predicate)
+ 
+        public T Primeiro(Expression<Func<T, bool>> predicate, params string[] includes)
         {
-            return Context.Set<T>().Where(predicate).FirstOrDefault();
+            var result = Context.Set<T>().Where(predicate);
+            foreach (string item in includes)
+            {
+                result = result.Include(item).AsQueryable();
+            }
+            return result.FirstOrDefault();
         }
+
+
         public string Adicionar(T entity)
         {
             try
@@ -67,8 +75,8 @@ namespace Lvmendes.Educacional.Comum.Repositorio
             try
             {
                 Context.Set<T>()
-          .Where(predicate).ToList()
-          .ForEach(del => Context.Set<T>().Remove(del));
+                  .Where(predicate).ToList()
+                  .ForEach(del => Context.Set<T>().Remove(del));
                 return "Deletado com sucesso!!";
             }
             catch (Exception ex)

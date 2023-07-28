@@ -29,18 +29,27 @@ export class CadastroprofessorComponent {
     private activatedRoute : ActivatedRoute) { }
 
     ngOnInit(): void {
+
+      this.estadoService.listar().subscribe((dados : RetornoApi) => 
+      {
+        this.estados = dados.resultado as Array<EstadoModel>;
+  
+      });
+
+
       this.ID = this.activatedRoute.snapshot.paramMap.get("id")?.toString();
       if(this.ID !== undefined){
         this.professorservice.carregar(this.ID).subscribe((dados : RetornoApi) => { 
           this.professor = dados.resultado as ProfessorModel;  
+          
+          this.professor.telefone = this.professor.telefones[0];
+          this.onChangeEstado(this.professor.endereco.estado.id);
+          this.onChangeCidade(this.professor.endereco.cidade.id);
+
         })
       }    
       
-    this.estadoService.listar().subscribe((dados : RetornoApi) => 
-    {
-      this.estados = dados.resultado as Array<EstadoModel>;
-
-    });
+  
   }
 
 
@@ -49,8 +58,8 @@ export class CadastroprofessorComponent {
     this.loading = true;
 
 
-    this.professor.telefones.push(this.professor.telefone)
     if(this.professor.id == 0){
+      this.professor.telefones.push(this.professor.telefone)
       this.professorservice.salvar(this.professor).subscribe((dados : RetornoApi) => 
       {this.alertaService.TratamentoAlerta(dados);
         this.loading = false;     
@@ -64,11 +73,10 @@ export class CadastroprofessorComponent {
         );
     } 
   }
-  onChangeCidado(idCidade: any) {
+  onChangeCidade(idCidade: any) {
     this.professor.endereco.cidadeId = idCidade;
   }
   onChangeEstado(idEstado: any) {
-
 
     if(idEstado > 0){
       this.cidadeService.listarPorEstado(idEstado).subscribe((dados : RetornoApi) => 
@@ -77,9 +85,9 @@ export class CadastroprofessorComponent {
         this.cidades = dados.resultado as Array<CidadeModel>;
       });
     }
-else{
-  this.cidades = new Array<CidadeModel>()
-}
+    else{
+      this.cidades = new Array<CidadeModel>()
+    }
     
   }
 }

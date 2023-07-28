@@ -74,7 +74,7 @@ namespace ApiInterna.Controllers
         [HttpGet("Carregar")]
         public ActionResult<RetornoApi> Carregar(Int64 Id)
         {
-            var retornoChamado = servico.Procurar(Id);
+            var retornoChamado = servico.Primeiro(s=>s.Id == Id);
             RetornoApi retorno = new RetornoApi
             {
                 Resultado = retornoChamado,
