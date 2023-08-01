@@ -40,6 +40,42 @@ builder.Services.AddScoped<IConteudoMateriaRepositorio, ConteudoMateriaRepositor
 builder.Services.AddScoped<IMateriasServico, MateriasServico>();
 builder.Services.AddScoped<IMateriasRepositorio, MateriasRepositorio>();
 
+
+
+builder.Services.AddScoped<IAlunoServico, AlunoServico>();
+builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
+
+
+
+builder.Services.AddScoped<IInstalacaoServico, InstalacaoServico>();
+builder.Services.AddScoped<IInstalacaoRepositorio, InstalacaoRepositorio>();
+
+
+builder.Services.AddScoped<ICursoOfertadoServico, CursoOfertadoServico>();
+builder.Services.AddScoped<ICursoOfertadoRepositorio, CursoOfertadoRepositorio>();
+
+
+builder.Services.AddScoped<IDisciplinaServico, DisciplinaServico>();
+builder.Services.AddScoped<IDisciplinaRepositorio, DisciplinaRepositorio>();
+
+builder.Services.AddScoped<IDisciplinaCursadaServico, DisciplinaCursadaServico>();
+builder.Services.AddScoped<IDisciplinaCursadaRepositorio, DisciplinaCursadaRepositorio>();
+
+builder.Services.AddScoped<IInstituicaoServico, InstituicaoServico>();
+builder.Services.AddScoped<IInstituicaoRepositorio, InstituicaoRepositorio>();
+
+builder.Services.AddScoped<IMatriculaServico, MatriculaServico>();
+builder.Services.AddScoped<IMatriculaRepositorio, MatriculaRepositorio>();
+
+builder.Services.AddScoped<IPeriodoServico, PeriodoServico>();
+builder.Services.AddScoped<IPeriodoRepositorio, PeriodoRepositorio>();
+
+builder.Services.AddScoped<ITurmaServico, TurmaServico>();
+builder.Services.AddScoped<ITurmaRepositorio, TurmaRepositorio>();
+
+builder.Services.AddScoped<IResponsavelServico, ResponsavelServico>();
+builder.Services.AddScoped<IResponsavelRepositorio, ResponsavelRepositorio>();
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ComumBDContext>(options => {

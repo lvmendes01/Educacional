@@ -56,8 +56,8 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.Property<long>("ResponsavelFinanceiroId")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("SexoId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
 
                     b.Property<int>("TipoIngresso")
                         .HasColumnType("int");
@@ -67,8 +67,6 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.HasIndex("EnderecoId");
 
                     b.HasIndex("ResponsavelFinanceiroId");
-
-                    b.HasIndex("SexoId");
 
                     b.ToTable("Alunos");
                 });
@@ -567,14 +565,12 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<long>("SexoId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("EnderecoId");
-
-                    b.HasIndex("SexoId");
 
                     b.ToTable("Professores");
                 });
@@ -613,14 +609,12 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<long>("SexoId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("EnderecoId");
-
-                    b.HasIndex("SexoId");
 
                     b.ToTable("Responsaveis");
                 });
@@ -641,24 +635,6 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Salas");
-                });
-
-            modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.SexoEntidade", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime>("DataCriacao")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sexos");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.TelefoneEntidade", b =>
@@ -758,17 +734,9 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.SexoEntidade", "Sexo")
-                        .WithMany()
-                        .HasForeignKey("SexoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Endereco");
 
                     b.Navigation("ResponsavelFinanceiro");
-
-                    b.Navigation("Sexo");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.Alvara", b =>
@@ -930,15 +898,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.SexoEntidade", "Sexo")
-                        .WithMany()
-                        .HasForeignKey("SexoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Endereco");
-
-                    b.Navigation("Sexo");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.ResponsavelEntidade", b =>
@@ -949,15 +909,7 @@ namespace Lvmendes.Educacional.Comum.Repositorio.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Lvmendes.Educacional.Comum.Entidades.SexoEntidade", "Sexo")
-                        .WithMany()
-                        .HasForeignKey("SexoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Endereco");
-
-                    b.Navigation("Sexo");
                 });
 
             modelBuilder.Entity("Lvmendes.Educacional.Comum.Entidades.TelefoneEntidade", b =>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lvmendes.Educacional.Comum.Modelo
 {
+    
     public class InstituicaoModelo : PessoaJuridicaModelo
     {
         public virtual string Natureza { get; set; }

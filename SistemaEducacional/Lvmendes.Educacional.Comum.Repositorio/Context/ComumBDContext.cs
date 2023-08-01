@@ -38,7 +38,6 @@ namespace Lvmendes.Educacional.Comum.Repositorio
         public DbSet<InstituicaoEntidade> Instituicoes { get; set; }
         public DbSet<MatriculaEntidade> Matriculas { get; set; }
         public DbSet<ResponsavelEntidade> Responsaveis { get; set; }
-        public DbSet<SexoEntidade> Sexos { get; set; }
         public DbSet<TurmaEntidade> Turmas { get; set; }
 
 

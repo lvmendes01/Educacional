@@ -9,7 +9,7 @@
 
         public virtual EstadoCivilEnum EstadoCivil { get; set; }
         public virtual EnderecoEntidade Endereco { get; set; }
-        public virtual SexoEntidade Sexo { get; set; }
+        public virtual SexoEnumerado Sexo { get; set; }
 
         public virtual string Email { get; set; }
         public virtual IList<TelefoneEntidade> Telefones { get; set; } = new List<TelefoneEntidade>();
