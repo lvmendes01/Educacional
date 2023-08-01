@@ -15,9 +15,9 @@ namespace Lvmendes.Educacional.Comum.Repositorio
 
         public ComumBDContext(DbContextOptions<ComumBDContext> options) : base(options)
         {
-
+         
         }
-     
+
         public DbSet<CursoEntidade> Cursos { get; set; }
         public DbSet<TurnoEntidade> Turnos { get; set; }
         public DbSet<ProfessorEntidade> Professores { get; set; }
@@ -29,6 +29,17 @@ namespace Lvmendes.Educacional.Comum.Repositorio
         public DbSet<MateriasEntidade> Materias { get; set; }
         public DbSet<EnderecoEntidade> Enderecos { get; set; }
         public DbSet<TelefoneEntidade> Telefones { get; set; }
+        public DbSet<AlunoEntidade> Alunos { get; set; }
+        public DbSet<Alvara> Alvaras { get; set; }
+        public DbSet<CursoOfertadoEntidade> CursosOfertados { get; set; }
+        public DbSet<DisciplinaCursadaEntidade> DisciplinasCursadas { get; set; }
+        public DbSet<DisciplinaEntidade> Disciplinas { get; set; }
+        public DbSet<InstalacaoEntidade> Instalacoes { get; set; }
+        public DbSet<InstituicaoEntidade> Instituicoes { get; set; }
+        public DbSet<MatriculaEntidade> Matriculas { get; set; }
+        public DbSet<ResponsavelEntidade> Responsaveis { get; set; }
+        public DbSet<SexoEntidade> Sexos { get; set; }
+        public DbSet<TurmaEntidade> Turmas { get; set; }
 
 
     }

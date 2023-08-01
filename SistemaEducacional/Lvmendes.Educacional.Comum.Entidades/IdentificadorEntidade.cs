@@ -4,6 +4,7 @@
     {
 
         public Int64 Id { get; set; }
-        public DateTime DataCriacao { get; set; }
+        public DateTime DataCriacao { get; set; } = DateTime.Now;
+
     }
 }

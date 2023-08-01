@@ -1,32 +1,33 @@
 ﻿using Lvmendes.Educacional.Comum.Entidades;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Lvmendes.Educacional.Comum.Modelo
 {
-    public class ProfessorModelo : PessoaFisicaModelo
+    public class InstituicaoModelo : PessoaJuridicaModelo
     {
-        public virtual string Matricula { get; set; }
+        public virtual string Natureza { get; set; }
+        public virtual IList<InstalacaoModelo> Filias { get; set; }
+
+
         public virtual string Email { get; set; }
         public virtual IList<TelefoneEntidade> Telefones { get; set; } = new List<TelefoneEntidade>();
-        public ProfessorEntidade Transformar(ProfessorModelo objeto)
+        public InstituicaoEntidade Transformar(InstituicaoModelo objeto)
         {
-            var entidade = new ProfessorEntidade
+            var entidade = new InstituicaoEntidade
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
-                Matricula = objeto.Matricula,
-                Cpf = objeto.Cpf,
+                CNPJ = objeto.CNPJ,
+                IE = objeto.IE,
                 Nome = objeto.Nome,
-                DataNascimento = objeto.DataNascimento,
-                Email = objeto.Email,
+                DataCriacaoEmpresa = objeto.DataCriacaoEmpresa,
                 Endereco = Endereco.Transformar(objeto.Endereco),
             };
-
+         
 
             foreach (var item in objeto.Telefones)
             {
@@ -42,21 +43,21 @@ namespace Lvmendes.Educacional.Comum.Modelo
 
             return entidade;
         }
-        public ProfessorModelo Transformar(ProfessorEntidade objeto)
+        public InstituicaoModelo Transformar(InstituicaoEntidade objeto)
         {
 
-            var entidade = new ProfessorModelo
+            var entidade = new InstituicaoModelo
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
-                Matricula=objeto.Matricula,
-                Cpf = objeto.Cpf,
-                DataNascimento = objeto.DataNascimento,
+                CNPJ = objeto.CNPJ,
+                IE = objeto.IE,
+                Nome = objeto.Nome,
+                DataCriacaoEmpresa = objeto.DataCriacaoEmpresa,
                 Email = objeto.Email,
                 Endereco = Endereco.Transformar(objeto.Endereco)
             };
 
-
             foreach (var item in objeto.Telefones)
             {
                 entidade.Telefones.Add(new TelefoneEntidade
@@ -70,7 +71,8 @@ namespace Lvmendes.Educacional.Comum.Modelo
             }
 
             return entidade;
+
         }
-            
     }
+
 }
