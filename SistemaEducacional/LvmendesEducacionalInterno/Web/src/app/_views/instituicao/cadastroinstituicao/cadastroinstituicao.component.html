@@ -1,0 +1,135 @@
+
+  <div class="card">
+    <div class="card-header">
+      instituicao
+    </div>
+    <div class="card-body">
+        <form>
+          <div class="row">
+     
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">CNPJ</label>
+                <input type="text" [(ngModel)]="instituicao.cnpj" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">IE</label>
+                <input type="text" [(ngModel)]="instituicao.ie" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Nome</label>
+                <input type="text" [(ngModel)]="instituicao.nome" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+          </div>
+          
+        
+
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Data Criação </label>
+                <input type="date" (ngModelChange)="updatedate($event)" [ngModel]="instituicao.dataCriacaoEmpresa|date:'yyyy-MM-dd'" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Natureza</label>
+                <input type="text" [(ngModel)]="instituicao.natureza" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Email</label>
+                <input type="email" [(ngModel)]="instituicao.email" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+          </div>
+           
+      
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Estado</label>
+           
+                <select [ngModel]="instituicao.endereco.estadoId" [ngModelOptions]="{standalone: true}" (ngModelChange)="onChangeEstado($event)"  class="form-control">
+                  <option selected>Selecione...</option>
+                  <option *ngFor="let estado of estados" [ngValue]="estado.id">{{estado.nomeEstado}}</option>
+                
+                </select>
+        
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="inputState">Cidade</label>
+                <select  *ngIf="cidades.length > 0" [ngModel]="instituicao.endereco.cidadeId" [ngModelOptions]="{standalone: true}" (ngModelChange)="onChangeCidade($event)"  class="form-control">
+                  <option selected>Selecione...</option>
+                  <option *ngFor="let cidade of cidades" [ngValue]="cidade.id">{{cidade.nomeCidade}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Logradouro</label>
+                <input type="text" [(ngModel)]="instituicao.endereco.logradouro" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+          </div>
+           
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Cep</label>
+                <input type="text" [(ngModel)]="instituicao.endereco.cep" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Numero</label>
+                <input type="text" [(ngModel)]="instituicao.endereco.numero" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Complemento</label>
+                <input type="text" [(ngModel)]="instituicao.endereco.complemento" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">DDD</label>
+                <input type="text" [(ngModel)]="instituicao.telefone.ddd" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Telefone</label>
+                <input type="text" [(ngModel)]="instituicao.telefone.numero" [ngModelOptions]="{standalone: true}" class="form-control"  >
+              </div>
+            </div>
+         
+          </div>
+
+          </form>
+        
+    </div>
+    <div class="card-footer">
+      <button [disabled]="loading" (click)="salvar()" class="btn btn-primary">
+        <span *ngIf="loading"  class="spinner-border spinner-border-sm me-1"></span>
+        <div *ngIf="instituicao.id ==0">Salvar instituicao</div>
+        <div *ngIf="instituicao.id  > 0">Atualizar instituicao</div> 
+        
+        
+    </button>
+        
+    </div>
+  </div>

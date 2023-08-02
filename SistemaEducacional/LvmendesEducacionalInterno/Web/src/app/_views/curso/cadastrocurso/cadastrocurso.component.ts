@@ -32,13 +32,15 @@ export class CadastrocursoComponent {
     if(this.curso.id == 0){
       this.cursoservice.salvar(this.curso).subscribe((dados : RetornoApi) => 
       {this.alertaService.TratamentoAlerta(dados);
-        this.loading = false;     
+        this.loading = false;   
+        this.curso = new CursoModel();  
         }
         );
     }else{
       this.cursoservice.atualizar(this.curso).subscribe((dados : RetornoApi) => 
       {this.alertaService.TratamentoAlerta(dados);
         this.loading = false;     
+        this.curso = new CursoModel();  
         }
         );
     } 

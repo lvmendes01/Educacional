@@ -4,7 +4,8 @@ import { AccountService } from './_services';
 import { map } from 'rxjs';
 import { User } from './_models';
 
-@Component({ selector: 'app-root', templateUrl: 'app.component.html',
+@Component({ selector: 'app-root',
+ templateUrl: 'app.component.html',
 styleUrls: [ './app.component.css' ] })
 export class AppComponent {
  
@@ -15,74 +16,54 @@ export class AppComponent {
       {
         link_name: "Home",
         link: "/dashboard",
-        icon: "bx bx-grid-alt",
+        icon: "fa  fa-home",
         sub_menu: []
       }, {
-        link_name: "Curso",
+        link_name: "Cadastros Base",
         link: null,
-        icon: "bx bx-collection",
+        icon: "fa fa-clipboard",
         sub_menu: [
           {
-            link_name: "Cadastro",
-            link: "/cursoCadastro",
-          }, {
-            link_name: "Lista",
+            link_name: "Curso",
             link: "/cursoListar",
-          }
-        ]
-      }, {
-        link_name: "Sala",
-        link: null,
-        icon: "bx bx-collection",
-        sub_menu: [
-          {
-            link_name: "Cadastro",
-            link: "/salaCadastro",
           }, {
-            link_name: "Lista",
+            link_name: "Sala",
             link: "/salaListar",
-          }
+          }, {
+            link_name: "Turnos",
+            link: "/turnoListar",
+          },{
+            link_name: "Disciplinas",
+            link: "/salaListar",
+          },
         ]
       }, {
-        link_name: "Turno",
+        link_name: "Instituição",
         link: null,
-        icon: "bx bx-collection",
+        icon: "fa fa-university",
         sub_menu: [
           {
             link_name: "Cadastro",
-            link: "/turnoCadastro",
+            link: "/instituicaoCadastro",
           }, {
-            link_name: "Lista",
-            link: "/turnoListar",
+            link_name: "Consulta",
+            link: "/instituicaoListar",
           }
         ]
       },  {
         link_name: "Professor",
         link: null,
-        icon: "bx bx-collection",
+        icon: "fa fa-id-card",
         sub_menu: [
           {
             link_name: "Cadastro",
             link: "/professorCadastro",
           }, {
-            link_name: "Lista",
+            link_name: "Consulta",
             link: "/professorListar",
           }
         ]
-      },  {
-        link_name: "Materia",
-        link: null,
-        icon: "bx bx-collection",
-        sub_menu: [
-          {
-            link_name: "Cadastro",
-            link: "/materiaCadastro",
-          }, {
-            link_name: "Lista",
-            link: "/materiaListar",
-          }
-        ]
-      }, 
+      }
     ]
     user?: User | null;
 

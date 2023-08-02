@@ -14,6 +14,8 @@ import { CadastroprofessorComponent } from './_views/professor/cadastroprofessor
 import { ListaprofessorsComponent } from './_views/professor/listaprofessores/listaprofessores.component';
 import { CadastromateriaComponent } from './_views/materia/cadastromateria/cadastromateria.component';
 import { ListamateriasComponent } from './_views/materia/listamaterias/listamaterias.component';
+import { CadastroinstituicaoComponent } from './_views/instituicao/cadastroinstituicao/cadastroinstituicao.component';
+import { ListaInstituicoesComponent } from './_views/instituicao/listainstituicoes/listainstituicoes.component';
 
 const accountModule = () => import('./_components/account/account.module').then(x => x.AccountModule);
 
@@ -44,6 +46,13 @@ const routes: Routes = [
     { path: 'materiaCadastro/:id',  component: CadastromateriaComponent, canActivate: [AuthGuard] },  
     { path: 'materiaListar',  component: ListamateriasComponent, canActivate: [AuthGuard] },
     
+
+    
+    
+    { path: 'instituicaoCadastro',  component: CadastroinstituicaoComponent, canActivate: [AuthGuard] },
+    { path: 'instituicaoCadastro/:id',  component: CadastroinstituicaoComponent, canActivate: [AuthGuard] },  
+    { path: 'instituicaoListar',  component: ListaInstituicoesComponent, canActivate: [AuthGuard] },
+
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];

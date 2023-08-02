@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Lvmendes.Educacional.Comum.Modelo
 {
-    public class InstalacaoModelo : IdentificadorModelo
+    public class InstalacaoModelo : PessoaJuridicaEntidade
     {
       
         public virtual EnderecoModelo Endereco { get; set; }
         public virtual string Email { get; set; }
-
+        public virtual Int64 InstituicaoId { get; set; }
         public virtual IList<TelefoneModelo> Telefones { get; set; } = new List<TelefoneModelo>();
-        public virtual IList<CursoOfertadoModelo> Cursos { get; set; } = new List<CursoOfertadoModelo>();
         public InstalacaoEntidade Transformar(InstalacaoModelo objeto)
         {
 
@@ -24,6 +23,7 @@ namespace Lvmendes.Educacional.Comum.Modelo
                 DataCriacao = objeto.DataCriacao,
                 Email = objeto.Email,
                 Endereco = Endereco.Transformar(objeto.Endereco),
+                InstituicaoEntidadeId = objeto.InstituicaoId,
             };
 
 
@@ -50,6 +50,9 @@ namespace Lvmendes.Educacional.Comum.Modelo
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
+                InstituicaoId  = objeto.InstituicaoEntidadeId,
+                Email = objeto.Email,
+                Endereco = Endereco.Transformar(objeto.Endereco)
             };
         }
     }

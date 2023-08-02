@@ -1,3 +1,5 @@
+
+
 /* Hamburger Menu */
 .hamburger-menu {
   position: relative;
@@ -22,7 +24,7 @@
 .label-hamburger-menu .bar {
   width: 40px;
   height: 4px;
-  background: #fff;
+  background: #030303;
   /* box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4); */
   border-radius: 1px;
   transition: 0.4s ease;
@@ -62,8 +64,8 @@
   position: relative;
   background-image: radial-gradient(
       circle farthest-corner at 7.2% 13.6%,
-      rgba(37, 249, 245, 1) 0%,
-      rgba(8, 70, 218, 1) 90%
+      var(--cor_principal_site) 0%,
+      var(--cor_segundaria_site) 90%
   );
   /* background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%, #25f9f5 0%, #0846da 90%); */
   height: 100vh;
@@ -81,7 +83,7 @@
 }
 
 .home-section .home-header .title {
-  color: white;
+  color: var(--cor_titulo);
   font-size: 35px;
 }
 
@@ -107,7 +109,7 @@
   left: 0;
   height: 100%;
   width: 260px;
-  background: white;
+  background-color: var(--cor_principal_menu);
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -128,7 +130,7 @@
 .sidebar .logo-details .logo {
   height: 40px;
   width: 100%;
-  background-image: linear-gradient(to right, #ffa726, #ff5722);
+  /*background-image: linear-gradient(to right, #0c0c0c, #ff5722);*/
 }
 
 .sidebar.sidebar-close .logo-details .logo {
@@ -156,11 +158,12 @@
 }
 
 .sidebar .nav-links li:hover {
-  background: #ffa726;
+  background: var(--cor_onmouse)
 }
 
+/*efeito selecionado*/
 .sidebar .nav-links li.active {
-  background-image: linear-gradient(to right, #ffa726, #ff5722);
+  background: var(--cor_submenuselecionado)
 }
 
 /* Dropdown Title */
@@ -192,7 +195,7 @@
   min-width: 60px;
   text-align: center;
   line-height: 50px;
-  color: #ffa726;
+  color: var(--cor_primeiro_icone);
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -200,7 +203,7 @@
 
 .sidebar .nav-links li:hover i, 
 .sidebar .nav-links li.active i {
-  color: white;
+  color: var(--cor_primeiro_icone_ativo);
 }
 
 .sidebar .nav-links li.showMenu i.arrow {
@@ -219,13 +222,13 @@
 .sidebar .nav-links li a .link_name {
   font-size: 16px;
   font-weight: 600;
-  color: #ffa726;
+  color:var(--cor_texto_menu);
   transition: all 0.4s ease;
 }
 
 .sidebar .nav-links li:hover a .link_name, 
 .sidebar .nav-links li.active a .link_name {
-  color: white;
+  color: var(--cor_texto_menu_selecionado);
 }
 
 .sidebar.sidebar-close .nav-links li a .link_name {
@@ -236,7 +239,7 @@
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 70px;
   /* margin-top: -10px; */
-  background: white;
+  background:  var(--cor_fundo_subItem);
   display: none;
   transition: all 0.4s ease;
 }
@@ -246,7 +249,7 @@
 }
 
 .sidebar .nav-links li .sub-menu a {
-  color: #ffa726;
+  color:  var(--cor_texto_subItem);
   font-size: 15px;
   padding: 7px 0;
   white-space: nowrap;
@@ -313,7 +316,7 @@
 
 .sidebar.sidebar-close .nav-links li .sub-menu li:first-child:hover .link_name, 
 .sidebar.sidebar-close .nav-links li .sub-menu li:first-child.active .link_name {
-  color: #ffa726;
+  color: #6d593c;
 }
 /*
 // .sidebar.sidebar-close .nav-links li .sub-menu li:first-child {

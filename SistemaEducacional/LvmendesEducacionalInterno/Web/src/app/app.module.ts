@@ -19,7 +19,9 @@ import { CadastroprofessorComponent } from './_views/professor/cadastroprofessor
 import { ListaprofessorsComponent } from './_views/professor/listaprofessores/listaprofessores.component';
 import { CadastromateriaComponent } from './_views/materia/cadastromateria/cadastromateria.component';
 import { ListamateriasComponent } from './_views/materia/listamaterias/listamaterias.component';
-
+import { CadastroinstituicaoComponent } from './_views/instituicao/cadastroinstituicao/cadastroinstituicao.component';
+import { ListaInstituicoesComponent } from './_views/instituicao/listainstituicoes/listainstituicoes.component';
+import { DateValueAccessorModule } from 'angular-date-value-accessor';
 
 @NgModule({
     imports: [
@@ -27,7 +29,8 @@ import { ListamateriasComponent } from './_views/materia/listamaterias/listamate
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        AppRoutingModule
+        AppRoutingModule,
+        DateValueAccessorModule
     ],
     declarations: [
         AppComponent,
@@ -41,6 +44,8 @@ import { ListamateriasComponent } from './_views/materia/listamaterias/listamate
         ListaprofessorsComponent,
         CadastromateriaComponent,
         ListamateriasComponent,
+        CadastroinstituicaoComponent,
+        ListaInstituicoesComponent
         
     ],
     providers: [

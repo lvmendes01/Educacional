@@ -11,24 +11,23 @@ namespace Lvmendes.Educacional.Comum.Modelo
     public class InstituicaoModelo : PessoaJuridicaModelo
     {
         public virtual string Natureza { get; set; }
-        public virtual IList<InstalacaoModelo> Filias { get; set; }
-
-
-        public virtual string Email { get; set; }
-        public virtual IList<TelefoneEntidade> Telefones { get; set; } = new List<TelefoneEntidade>();
         public InstituicaoEntidade Transformar(InstituicaoModelo objeto)
         {
-            var entidade = new InstituicaoEntidade
-            {
-                Id = objeto.Id,
-                DataCriacao = objeto.DataCriacao,
-                CNPJ = objeto.CNPJ,
-                IE = objeto.IE,
-                Nome = objeto.Nome,
-                DataCriacaoEmpresa = objeto.DataCriacaoEmpresa,
-                Endereco = Endereco.Transformar(objeto.Endereco),
-            };
-         
+            
+             var entidade = new InstituicaoEntidade
+             {
+                 Id = objeto.Id,
+                 DataCriacao = objeto.DataCriacao,
+                 IE = objeto.IE,
+                 Nome = objeto.Nome,
+                 DataCriacaoEmpresa = objeto.DataCriacaoEmpresa,
+                 Endereco = Endereco.Transformar(objeto.Endereco),
+                 CNPJ = objeto.CNPJ,
+                 Email = objeto.Email,
+                 Situacao = objeto.Situacao,
+                 Natureza =objeto.Natureza
+
+             };
 
             foreach (var item in objeto.Telefones)
             {
@@ -51,12 +50,14 @@ namespace Lvmendes.Educacional.Comum.Modelo
             {
                 Id = objeto.Id,
                 DataCriacao = objeto.DataCriacao,
-                CNPJ = objeto.CNPJ,
                 IE = objeto.IE,
                 Nome = objeto.Nome,
                 DataCriacaoEmpresa = objeto.DataCriacaoEmpresa,
+                Endereco = Endereco.Transformar(objeto.Endereco),
+                CNPJ = objeto.CNPJ,
                 Email = objeto.Email,
-                Endereco = Endereco.Transformar(objeto.Endereco)
+                Situacao = objeto.Situacao,
+                Natureza = objeto.Natureza
             };
 
             foreach (var item in objeto.Telefones)

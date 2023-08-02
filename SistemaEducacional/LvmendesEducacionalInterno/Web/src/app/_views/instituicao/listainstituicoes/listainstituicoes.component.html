@@ -1,0 +1,43 @@
+
+<div class="card">
+    <h4 class="card-header">Lista Instituicoes</h4>
+    <div class="card-body">
+      
+        <input class="form-control mt-2 mb-2" type="text" [(ngModel)]="searchText"  (input)="Search()" placeholder="Buscar pelo Nome" /> 
+        <table class="table table-striped table-bordered table-sm row-border hover" id="datatableexample">
+          <thead>
+            <tr>
+            
+                <th>Matricula</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Editar</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+                  <tr *ngFor="let group of Instituicoes">
+                     
+                    <td>{{group.natureza}}  </td>
+                    <td>{{group.nome}}  </td>
+                    <td>{{group.email}}  </td>
+                    <td>{{group.telefones[0].ddd}}-{{group.telefones[0].numero}}  </td>
+                    <td>{{group.endereco.estado.nomeEstado + ' '
+                         + group.endereco.cidade.nomeCidade + ' ' 
+                         + group.endereco.logradouro + ' '
+                          +group.endereco.numero + ' ' 
+                          +group.endereco.cep}}  </td>
+
+
+                      <td><a [routerLink]="['/instituicaoCadastro', group.id]">Editar</a></td>
+                  </tr>
+          </tbody>        </table>
+    </div>
+
+
+
+    
+</div>
+

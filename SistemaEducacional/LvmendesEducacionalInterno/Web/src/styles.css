@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /* Add application styles & imports to this file! */
-@import '~font-awesome/css/font-awesome.css';
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
 /* Google Fonts Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -15,10 +15,28 @@
 .text-sidebar {
   font-size: 30px;
   font-weight: 600;
-  color: #25f9f5;
+  color: #0f8381;
   padding-bottom: 10px;
 }
 
 ul {
   padding: 0;
+}
+
+:root{
+  --cor_principal_menu: #6495ED;
+  --cor_titulo: #fffefe;
+
+ /*MENU*/
+  --cor_principal_site: rgb(56, 95, 221) 0%;
+  --cor_segundaria_site: rgb(174, 193, 236) 90%;
+  /*MENU*/
+  --cor_onmouse: #f7eded;
+  --cor_submenuselecionado: #7c99f8;
+  --cor_primeiro_icone:#00000;
+  --cor_primeiro_icone_ativo: #0a0a0a;
+  --cor_texto_menu:#f8f8f8;
+  --cor_texto_menu_selecionado:#111111;
+  --cor_fundo_subItem:rgb(253, 253, 253);
+  --cor_texto_subItem:rgb(15, 15, 15);
 }
